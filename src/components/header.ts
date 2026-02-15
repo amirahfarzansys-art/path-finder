@@ -1,0 +1,44 @@
+export function renderHeader(): string {
+    return `
+  <nav
+        class="sticky top-0 z-50 bg-white/90 dark:bg-background-dark/90 backdrop-blur-md border-b border-primary/10 transition-colors">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center gap-2">
+                    <div class="bg-primary p-2 rounded-lg">
+                        <span class="material-icons text-background-dark font-bold text-3xl">local_shipping</span>
+                    </div>
+                    <span class="text-2xl font-bold tracking-tight text-slate-900 dark:text-white">امداد <span
+                            class="text-primary">نیسان</span></span>
+                </div>
+                <div class="hidden md:flex items-center space-x-reverse space-x-8">
+                    <a class="text-slate-700 dark:text-slate-200 hover:text-primary transition-colors" href="#">صفحه
+                        اصلی</a>
+                    <a class="text-slate-700 dark:text-slate-200 hover:text-primary transition-colors"
+                        href="#pricing-services">خدمات و قیمت‌ها</a>
+                    <a class="text-slate-700 dark:text-slate-200 hover:text-primary transition-colors"
+                        href="#gallery">گالری ناوگان</a>
+                    <a class="text-slate-700 dark:text-slate-200 hover:text-primary transition-colors"
+                        href="#coverage">محدوده پوشش</a>
+                </div>
+                <div class="flex items-center gap-4">
+                    <button
+                        class="theme-toggle-btn p-2 rounded-full bg-slate-100 dark:bg-white/10 text-slate-700 dark:text-primary hover:bg-slate-200 dark:hover:bg-white/20 transition-all flex items-center justify-center"
+                        onclick="document.documentElement.classList.toggle('dark')" title="تغییر حالت نمایش">
+                        <span class="material-icons sun">light_mode</span>
+                        <span class="material-icons moon">dark_mode</span>
+                    </button>
+                    <a class="hidden sm:flex items-center gap-2 bg-primary hover:bg-accent text-slate-900 font-bold py-2 px-6 rounded-lg transition-all transform hover:scale-105"
+                        href="tel:09120000000">
+                        <span class="material-icons">phone_in_talk</span>
+                        <span>۰۹۱۲۰۰۰۰۰۰۰</span>
+                    </a>
+                    <button class="md:hidden text-slate-900 dark:text-white">
+                        <span class="material-icons text-3xl">menu</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+  `
+}

@@ -1,0 +1,28 @@
+{
+    "services": [
+        {
+            "icon": "car_crash",
+            "title": "یدک‌کش نیسان چرخ‌گیر",
+            "description": "حمل تخصصی با سیستم چرخ‌گیر هیدرولیک بدون آسیب به خودرو.",
+            "price": 400000
+        },
+        {
+            "icon": "build",
+            "title": "مکانیک سیار",
+            "description": "عیب‌یابی و تعمیرات در محل.",
+            "price": 250000
+        },
+        {
+            "icon": "battery_charging_full",
+            "title": "امداد باطری",
+            "description": "باطری به باطری سریع و تست دینام.",
+            "price": 180000
+        },
+        {
+            "icon": "tire_repair",
+            "title": "پنچرگیری",
+            "description": "تعویض لاستیک و پنچرگیری تخصصی.",
+            "price": 150000
+        }
+    ]
+}
