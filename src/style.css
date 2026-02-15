@@ -1,0 +1,87 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: 'Material Symbols Outlined';
+    font-style: normal;
+    font-weight: 100 700;
+    src: url(material.woff2) format('woff2');
+}
+
+.material-symbols-outlined {
+    font-family: 'Material Symbols Outlined';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lexend', 'Tahoma', 'Arial', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.gallery-item:hover .overlay {
+    opacity: 1;
+}
+
+#lightbox:target {
+    display: flex;
+}
+
+.map-pulse {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background-color: #f4c025;
+    border-radius: 50%;
+}
+
+.map-pulse::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #f4c025;
+    border-radius: 50%;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 0.8;
+    }
+
+    100% {
+        transform: scale(3);
+        opacity: 0;
+    }
+}
+
+.theme-toggle-btn .sun {
+    display: none;
+}
+
+.theme-toggle-btn .moon {
+    display: block;
+}
+
+.dark .theme-toggle-btn .sun {
+    display: block;
+}
+
+.dark .theme-toggle-btn .moon {
+    display: none;
+}
