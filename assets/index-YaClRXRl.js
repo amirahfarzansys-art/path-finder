@@ -1,4 +1,4 @@
-(function(){const s=document.createElement("link").relList;if(s&&s.supports&&s.supports("modulepreload"))return;for(const e of document.querySelectorAll('link[rel="modulepreload"]'))n(e);new MutationObserver(e=>{for(const a of e)if(a.type==="childList")for(const l of a.addedNodes)l.tagName==="LINK"&&l.rel==="modulepreload"&&n(l)}).observe(document,{childList:!0,subtree:!0});function c(e){const a={};return e.integrity&&(a.integrity=e.integrity),e.referrerPolicy&&(a.referrerPolicy=e.referrerPolicy),e.crossOrigin==="use-credentials"?a.credentials="include":e.crossOrigin==="anonymous"?a.credentials="omit":a.credentials="same-origin",a}function n(e){if(e.ep)return;e.ep=!0;const a=c(e);fetch(e.href,a)}})();const d={title:"راه‌بان",phone:"09123456789"},p=[{icon:"car_crash",title:"یدک‌کش نیسان چرخ‌گیر",description:"حمل تخصصی با سیستم چرخ‌گیر هیدرولیک بدون آسیب به خودرو.",price:"400,000"},{icon:"build",title:"مکانیک سیار",description:"عیب‌یابی و تعمیرات در محل.",price:"250,000"},{icon:"battery_charging_full",title:"امداد باطری",description:"باطری به باطری سریع و تست دینام.",price:"180,000"},{icon:"tire_repair",title:"پنچرگیری",description:"تعویض لاستیک و پنچرگیری تخصصی.",price:"150,000"}],x=[{name:"سارا قنبری",car:"کیا سراتو",text:"توی اتوبان گیر کرده بودم و خیلی استرس داشتم. امدادگر خیلی با اخلاق بود و با احتیاط کامل ماشین رو تا نمایندگی حمل کردن. ممنون از تیم خوبتون."},{name:"مریم احمدی",car:"سمند سورن",text:"واقعاً از سرعت عملشون غافلگیر شدم. کمتر از ۱۵ دقیقه رسیدن و نیسانشون خیلی تمیز و مجهز بود. چرخ‌گیرشون هیچ صدمه‌ای به سپرم نزد."},{name:"محمد کریمی",car:"تویوتا کرولا",text:"قیمتشون دقیقاً همونی بود که پشت تلفن گفتن. تجهیزاتشون بسیار مدرن بود و راننده نیسان خیلی مسلط بود. امنیت خودرو کاملاً حفظ شد."}],m=[{city:"شاهین دژ",eta:"15 دقیقه"},{city:"محمودآباد (محمودجیق)",eta:"25 دقیقه"},{city:"کشاورز",eta:"35 دقیقه"},{city:"میاندوآب",eta:"75 دقیقه"},{city:"بوکان",eta:"60 دقیقه"},{city:"تکاب",eta:"85 دقیقه"}],r={hero:d,services:p,testimonials:x,coverage:m},g=r.coverage;function u(){return`
+(function(){const s=document.createElement("link").relList;if(s&&s.supports&&s.supports("modulepreload"))return;for(const e of document.querySelectorAll('link[rel="modulepreload"]'))o(e);new MutationObserver(e=>{for(const a of e)if(a.type==="childList")for(const l of a.addedNodes)l.tagName==="LINK"&&l.rel==="modulepreload"&&o(l)}).observe(document,{childList:!0,subtree:!0});function c(e){const a={};return e.integrity&&(a.integrity=e.integrity),e.referrerPolicy&&(a.referrerPolicy=e.referrerPolicy),e.crossOrigin==="use-credentials"?a.credentials="include":e.crossOrigin==="anonymous"?a.credentials="omit":a.credentials="same-origin",a}function o(e){if(e.ep)return;e.ep=!0;const a=c(e);fetch(e.href,a)}})();const d={title:"راه‌بان",phone:"09123456789"},p=[{icon:"car_crash",title:"یدک‌کش نیسان چرخ‌گیر",description:"حمل تخصصی با سیستم چرخ‌گیر هیدرولیک بدون آسیب به خودرو.",price:"400,000"},{icon:"build",title:"مکانیک سیار",description:"عیب‌یابی و تعمیرات در محل.",price:"250,000"},{icon:"battery_charging_full",title:"امداد باطری",description:"باطری به باطری سریع و تست دینام.",price:"180,000"},{icon:"tire_repair",title:"پنچرگیری",description:"تعویض لاستیک و پنچرگیری تخصصی.",price:"150,000"}],x=[{name:"سارا قنبری",car:"کیا سراتو",text:"توی اتوبان گیر کرده بودم و خیلی استرس داشتم. امدادگر خیلی با اخلاق بود و با احتیاط کامل ماشین رو تا نمایندگی حمل کردن. ممنون از تیم خوبتون."},{name:"مریم احمدی",car:"سمند سورن",text:"واقعاً از سرعت عملشون غافلگیر شدم. کمتر از ۱۵ دقیقه رسیدن و نیسانشون خیلی تمیز و مجهز بود. چرخ‌گیرشون هیچ صدمه‌ای به سپرم نزد."},{name:"محمد کریمی",car:"تویوتا کرولا",text:"قیمتشون دقیقاً همونی بود که پشت تلفن گفتن. تجهیزاتشون بسیار مدرن بود و راننده نیسان خیلی مسلط بود. امنیت خودرو کاملاً حفظ شد."}],m=[{city:"شاهین دژ",eta:"15 دقیقه"},{city:"محمودآباد (محمودجیق)",eta:"25 دقیقه"},{city:"کشاورز",eta:"35 دقیقه"},{city:"میاندوآب",eta:"75 دقیقه"},{city:"بوکان",eta:"60 دقیقه"},{city:"تکاب",eta:"85 دقیقه"}],r={hero:d,services:p,testimonials:x,coverage:m},g=r.coverage;function u(){return`
   <section class="py-24 bg-white dark:bg-background-dark transition-colors overflow-hidden" id="coverage">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
@@ -49,7 +49,7 @@
             </div>
         </div>
     </section>
-  `}const v=r.hero;function b(){return`
+  `}const v=r.hero;function f(){return`
       <footer class="bg-slate-900 dark:bg-black border-t border-white/5 pt-20 pb-28 transition-colors" id="contact">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid md:grid-cols-4 gap-12 mb-16">
@@ -117,7 +117,7 @@
             </div>
         </div>
     </footer>
-  `}const i=r.hero;function f(){return`
+  `}const i=r.hero;function b(){return`
   <nav class="sticky top-0 z-50 bg-white/90 dark:bg-background-dark/90 backdrop-blur-md border-b border-primary/10 transition-colors">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">
@@ -159,7 +159,7 @@
   <header class="relative overflow-hidden min-h-[85vh] flex items-center">
         <div class="absolute inset-0 z-0">
             <img alt="Nissan Towing Truck Service" class="w-full h-full object-cover"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDAn81qqrvMRQK3DZkJbfjGu6p09RqOm3JqpkYYY8aHwE3rL6dMeCMLGF6F7DYSFA8xZH7ORGsHMeSsjBfB18RHugoAkVVRagSxJaAIYVMiTwpQrxrck4Ubnx0huEawLZOws74guAio96fdqJ1swykTFNAzYNINZYSXGklu-hOT-nyeXJdlFJE8oxMGbMjyPTPmT_iYpbNvA3cTbHmOWSPdpD889B-i0nPVlKr1EU6TPG3EqXejOF--9MkAQF_yyScp98D1Y_7M7c8" />
+                src="hero.webp" alt="Hero Image"/>
             <div class="absolute inset-0 bg-gradient-to-l from-black via-black/80 to-transparent"></div>
         </div>
         <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
@@ -228,7 +228,7 @@
         </div>
       </div>
     </section>
-  `}const o=r.hero;function j(){return`
+  `}const n=r.hero;function j(){return`
   <div
         class="fixed bottom-0 left-0 right-0 z-50 bg-slate-900/95 dark:bg-black/95 backdrop-blur-lg border-t border-primary/20 shadow-[0_-10px_40px_-15px_rgba(244,192,37,0.3)] transition-colors">
         <div class="max-w-7xl mx-auto px-4 h-20 flex items-center justify-between gap-4">
@@ -238,11 +238,11 @@
                 </div>
                 <div class="hidden sm:block">
                     <p class="text-primary text-xs font-bold uppercase tracking-wider mb-1">تماس اضطراری ۲۴ ساعته</p>
-                    <p class="text-white text-xl font-black">${o.phone}</p>
+                    <p class="text-white text-xl font-black">${n.phone}</p>
                 </div>
             </div>
             <a class="flex-grow sm:flex-grow-0 bg-primary hover:bg-accent text-slate-900 font-black py-3 px-8 rounded-xl flex items-center justify-center gap-3 transition-transform hover:scale-[1.02] active:scale-95 shadow-lg shadow-primary/20"
-                href="tel:${o.phone}">
+                href="tel:${n.phone}">
                 <span class="material-icons">flash_on</span>
                 <span>اعزام فوری امدادگر</span>
             </a>
@@ -266,7 +266,7 @@
             </a>
         </div>
     </div>
-  `}function S(t){return`
+  `}function _(t){return`
         <div class="bg-white dark:bg-card-dark p-8 rounded-2xl shadow-lg border-r-4 border-primary relative transition-colors">
             <div class="absolute -top-4 -right-4 bg-primary text-background-dark w-10 h-10 rounded-full flex items-center justify-center shadow-lg">
                 <span class="material-icons">format_quote</span>
@@ -282,7 +282,7 @@
             </div>
             <p class="text-slate-600 dark:text-slate-300 italic leading-relaxed">${t.text}</p>
         </div>
-  `}const _=r.testimonials;function B(){return`
+  `}const S=r.testimonials;function B(){return`
       <section class="py-24 bg-slate-50 dark:bg-background-dark/50 transition-colors" id="testimonials">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
@@ -290,16 +290,16 @@
                 <h2 class="text-3xl md:text-4xl font-bold mt-2 mb-4 text-slate-900 dark:text-white">نظرات مشتریان</h2>
                 <div class="h-1.5 w-24 bg-primary mx-auto rounded-full"></div>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">${_.map(s=>S(s)).join("")}</div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">${S.map(s=>_(s)).join("")}</div>
         </div>
     </section>
-  `}function O(){const t=document.querySelector("#app");t.innerHTML=`
-    ${f()}
+  `}function K(){const t=document.querySelector("#app");t.innerHTML=`
+    ${b()}
     ${y()}
     ${k()}
   
     ${B()}
     ${u()}
-    ${b()}
+    ${f()}
     ${j()}
-  `}O();
+  `}K();
