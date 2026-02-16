@@ -7,7 +7,7 @@ export default defineConfig({
     base: process.env.BASE || '/',
     build: {
         outDir: 'dist',
-        assetsDir: 'assets',
+        assetsDir: 'client/assets',
         sourcemap: false
     },
     plugins: [
