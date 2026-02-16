@@ -1,5 +1,6 @@
 import { defineConfig } from 'vite'
 import tailwindcss from '@tailwindcss/vite'
+import { VitePWA } from 'vite-plugin-pwa'
 
 export default defineConfig({
     // For GitHub Pages you can set BASE=/path-finder/ before building.
@@ -13,6 +14,34 @@ export default defineConfig({
     },
     plugins: [
         tailwindcss(),
+        VitePWA({
+            registerType: 'autoUpdate',
+            includeAssets: ['favicon.ico'],
+            manifest: {
+                name: 'امداد خودرو راه‌بان',
+                short_name: 'راه‌بان',
+                description: 'مداد خودرو راه‌بان خدمات ۲۴ ساعته یدک‌کش و مکانیک سیار در شاهین دژ و حومه با اعزام سریع و قیمت شفاف',
+                theme_color: '#0f172a',
+                background_color: '#0f172a',
+                display: 'standalone',
+                start_url: '/path-finder/',
+                scope: '/path-finder/',
+                lang: 'fa',
+                dir: 'rtl',
+                icons: [
+                    {
+                        src: '/path-finder/pwa-192.png',
+                        sizes: '192x192',
+                        type: 'image/png'
+                    },
+                    {
+                        src: '/path-finder/pwa-512.png',
+                        sizes: '512x512',
+                        type: 'image/png'
+                    }
+                ]
+            }
+        })
     ],
 })
 

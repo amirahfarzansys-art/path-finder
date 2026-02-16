@@ -1,6 +1,7 @@
 import './style.css'
 import { renderAppHtml } from './app'
 import { initTheme, toggleTheme } from './utils/theme'
+import { registerSW } from 'virtual:pwa-register'
 
 export function mountApp() {
   initTheme()
@@ -11,7 +12,7 @@ export function mountApp() {
   app.innerHTML = `
     ${renderAppHtml()}
   `
-
+  registerSW({ immediate: true })
   setupThemeToggle()
 }
 
