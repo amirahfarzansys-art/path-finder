@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://amirahfarzansys-art.github.io/path-finder/sitemap.xml
