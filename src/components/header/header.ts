@@ -25,8 +25,9 @@ export function renderHeader(): string {
                 </div>
                 <div class="flex items-center gap-4">
                     <button
+                        id="theme-toggle"
                         class="theme-toggle-btn p-2 rounded-full bg-slate-100 dark:bg-white/10 text-slate-700 dark:text-primary hover:bg-slate-200 dark:hover:bg-white/20 transition-all flex items-center justify-center"
-                        onclick="document.documentElement.classList.toggle('dark')" title="تغییر حالت نمایش">
+                        title="تغییر حالت نمایش">
                         <span class="material-icons sun">light_mode</span>
                         <span class="material-icons moon">dark_mode</span>
                     </button>

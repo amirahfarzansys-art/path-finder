@@ -7,7 +7,9 @@ import { renderServices } from './components/services/services'
 import { renderStickyCall } from './components/sticky-call/sticky-call'
 import { renderTestimonials } from './components/testimonial/testimonials'
 import './style.css'
+import { initTheme, toggleTheme } from './utils/theme'
 
+initTheme();
 export function renderApp() {
   const app = document.querySelector('#app')!
 
@@ -24,4 +26,14 @@ export function renderApp() {
   // ${renderGallery()}
 }
 
+export function setupThemeToggle() {
+  const btn = document.querySelector('#theme-toggle')
+
+  if (btn) {
+    btn.addEventListener('click', toggleTheme)
+  }
+}
+
+initTheme();
 renderApp();
+setupThemeToggle();
