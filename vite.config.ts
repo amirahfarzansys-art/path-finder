@@ -15,3 +15,13 @@ export default defineConfig({
         tailwindcss(),
     ],
 })
+
+// "scripts": {
+//     "dev": "vite",
+//     "start": "node server.js",
+//     "build": "tsc && npm run build:client && npm run build:server",
+//     "build:client": "vite build --outDir dist/client",
+//     "build:server": "vite build --ssr src/entry-server.js --outDir dist/server",
+//     "preview": "vite preview",
+//     "deploy": "npm run build:client && gh-pages -d dist/client"
+//   },
