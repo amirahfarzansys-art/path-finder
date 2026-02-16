@@ -8,7 +8,7 @@ export function renderHero(): string {
   <header class="relative overflow-hidden min-h-[85vh] flex items-center">
         <div class="absolute inset-0 z-0">
             <img alt="Nissan Towing Truck Service" class="w-full h-full object-cover"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDAn81qqrvMRQK3DZkJbfjGu6p09RqOm3JqpkYYY8aHwE3rL6dMeCMLGF6F7DYSFA8xZH7ORGsHMeSsjBfB18RHugoAkVVRagSxJaAIYVMiTwpQrxrck4Ubnx0huEawLZOws74guAio96fdqJ1swykTFNAzYNINZYSXGklu-hOT-nyeXJdlFJE8oxMGbMjyPTPmT_iYpbNvA3cTbHmOWSPdpD889B-i0nPVlKr1EU6TPG3EqXejOF--9MkAQF_yyScp98D1Y_7M7c8" />
+                src="hero.webp" alt="Hero Image"/>
             <div class="absolute inset-0 bg-gradient-to-l from-black via-black/80 to-transparent"></div>
         </div>
         <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
