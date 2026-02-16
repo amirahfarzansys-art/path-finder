@@ -13,14 +13,14 @@
     font-family: Vazir;
     font-style: normal;
     font-weight: normal;
-    src: url('fonts/vazir/Vazir-Medium.eot');
-    src: url('fonts/vazir/Vazir-Medium.eot?#iefix') format('embedded-opentype'),
+    src: url('./assets/fonts/vazir/Vazir-Medium.eot');
+    src: url('./assets/fonts/vazir/Vazir-Medium.eot?#iefix') format('embedded-opentype'),
         /* IE6-8 */
-        url('/fonts/vazir/Vazir-Medium.woff') format('woff'),
+        url('./assets/fonts/vazir/Vazir-Medium.woff') format('woff'),
         /* FF39+,Chrome36+, Opera24+*/
-        url('fonts/vazir/Vazir-Medium.woff2') format('woff2'),
+        url('./assets/fonts/vazir/Vazir-Medium.woff2') format('woff2'),
         /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
-        url('fonts/vazir/Vazir-Medium.ttf') format('truetype'),
+        url('./assets/fonts/vazir/Vazir-Medium.ttf') format('truetype'),
 }
 
 /* fallback */
@@ -28,7 +28,7 @@
     font-family: 'Material Icons';
     font-style: normal;
     font-weight: 400;
-    src: url('fonts/material-icon/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2') format('woff2');
+    src: url('./assets/fonts/material-icon/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2') format('woff2');
 }
 
 .material-icons {
@@ -45,13 +45,14 @@
     font-feature-settings: 'liga';
     -webkit-font-feature-settings: 'liga';
     -webkit-font-smoothing: antialiased;
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
 }
 
 @font-face {
     font-family: 'Material Symbols Outlined';
     font-style: normal;
     font-weight: 100 700;
-    src: url('fonts/material-icon/kJEPBvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzBwG-RpA6RzaxHMPdY40KH8nGzv3fzfVJO1Q.woff2') format('woff2');
+    src: url('./assets/fonts/material-icon/kJEPBvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzBwG-RpA6RzaxHMPdY40KH8nGzv3fzfVJO1Q.woff2') format('woff2');
 }
 
 .material-symbols-outlined {
@@ -68,6 +69,7 @@
     direction: ltr;
     -webkit-font-feature-settings: 'liga';
     -webkit-font-smoothing: antialiased;
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
 }
 
 * {

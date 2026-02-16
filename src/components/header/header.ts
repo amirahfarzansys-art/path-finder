@@ -5,15 +5,14 @@ const data = rawData.hero as Hero
 
 export function renderHeader(): string {
     return `
-  <nav
-        class="sticky top-0 z-50 bg-white/90 dark:bg-background-dark/90 backdrop-blur-md border-b border-primary/10 transition-colors">
+  <nav class="sticky top-0 z-50 bg-white/90 dark:bg-background-dark/90 backdrop-blur-md border-b border-primary/10 transition-colors">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">
                 <div class="flex items-center gap-2">
-                    <div class="bg-primary p-2 rounded-lg">
-                        <span class="material-icons text-background-dark font-bold text-3xl">local_shipping</span>
+                    <div class="rounded-lg">
+                    <img src="logo.png" alt="Logo" class="w-12 h-12">
                     </div>
-                    <span class="text-2xl font-bold tracking-tight text-slate-900 dark:text-white">امداد <span
+                    <span class="text-2xl font-bold tracking-tight text-slate-900 dark:text-white">امداد خودرو <span
                             class="text-primary">${data.title}</span></span>
                 </div>
                 <div class="hidden md:flex items-center space-x space-x-8">

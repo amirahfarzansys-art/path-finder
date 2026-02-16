@@ -10,10 +10,10 @@ export function renderFooter(): string {
             <div class="grid md:grid-cols-4 gap-12 mb-16">
                 <div class="col-span-1 md:col-span-2">
                     <div class="flex items-center gap-2 mb-6">
-                        <div class="bg-primary p-2 rounded-lg">
-                            <span class="material-icons text-slate-900 font-bold text-2xl">local_shipping</span>
+                        <div class="rounded-lg">
+                            <img src="logo.png" alt="Logo" class="w-12 h-12">
                         </div>
-                        <span class="text-xl font-bold tracking-tight text-white">امداد <span
+                        <span class="text-xl font-bold tracking-tight text-white">امداد خودرو <span
                                 class="text-primary">راه‌بان</span></span>
                     </div>
                     <p class="text-slate-400 leading-relaxed mb-6 max-w-md">
@@ -59,7 +59,7 @@ export function renderFooter(): string {
                 </div>
             </div>
             <div class="border-t border-white/5 pt-10 flex flex-col md:flex-row justify-between items-center gap-4">
-                <p class="text-slate-500 text-sm">© ۱۴۰۳ تمامی حقوق مادی و معنوی برای مجموعه امداد راه‌بان محفوظ
+                <p class="text-slate-500 text-sm">© ۱۴۰۴ تمامی حقوق مادی و معنوی برای مجموعه امداد راه‌بان محفوظ
                     است.</p>
                 <div class="flex gap-6">
                     <img alt="Trust Badge 1"
