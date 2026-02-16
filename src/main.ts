@@ -1,11 +1,11 @@
-import { renderCoverage } from './components/coverage'
-import { renderFooter } from './components/footer'
-import { renderGallery } from './components/gallery'
-import { renderHeader } from './components/header'
-import { renderHero } from './components/hero'
-import { renderServices } from './components/services'
-import { renderStickyCall } from './components/sticky-call'
-import { renderTestimonials } from './components/testimonials'
+import { renderCoverage } from './components/coverage/coverage'
+import { renderFooter } from './components/footer/footer'
+// import { renderGallery } from './components/gallery'
+import { renderHeader } from './components/header/header'
+import { renderHero } from './components/hero/hero'
+import { renderServices } from './components/services/services'
+import { renderStickyCall } from './components/sticky-call/sticky-call'
+import { renderTestimonials } from './components/testimonial/testimonials'
 import './style.css'
 
 export function renderApp() {
@@ -15,12 +15,13 @@ export function renderApp() {
     ${renderHeader()}
     ${renderHero()}
     ${renderServices()}
-    ${renderGallery()}
+  
     ${renderTestimonials()}
     ${renderCoverage()}
     ${renderFooter()}
     ${renderStickyCall()}
   `
+  // ${renderGallery()}
 }
 
 renderApp();

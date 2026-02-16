@@ -1,3 +1,8 @@
+import rawData from '../../data/site-data.json'
+import type { Hero } from '../../types/site'
+
+const data = rawData.hero as Hero
+
 export function renderStickyCall(): string {
     return `
   <div
@@ -9,11 +14,11 @@ export function renderStickyCall(): string {
                 </div>
                 <div class="hidden sm:block">
                     <p class="text-primary text-xs font-bold uppercase tracking-wider mb-1">تماس اضطراری ۲۴ ساعته</p>
-                    <p class="text-white text-xl font-black">۰۹۱۲ ۰۰۰ ۰۰۰۰</p>
+                    <p class="text-white text-xl font-black">${data.phone}</p>
                 </div>
             </div>
             <a class="flex-grow sm:flex-grow-0 bg-primary hover:bg-accent text-slate-900 font-black py-3 px-8 rounded-xl flex items-center justify-center gap-3 transition-transform hover:scale-[1.02] active:scale-95 shadow-lg shadow-primary/20"
-                href="tel:09120000000">
+                href="tel:${data.phone}">
                 <span class="material-icons">flash_on</span>
                 <span>اعزام فوری امدادگر</span>
             </a>

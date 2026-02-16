@@ -1,3 +1,8 @@
+import rawData from '../../data/site-data.json'
+import type { Hero } from '../../types/site'
+
+const data = rawData.hero as Hero
+
 export function renderFooter(): string {
     return `
       <footer class="bg-slate-900 dark:bg-black border-t border-white/5 pt-20 pb-28 transition-colors" id="contact">
@@ -9,10 +14,10 @@ export function renderFooter(): string {
                             <span class="material-icons text-slate-900 font-bold text-2xl">local_shipping</span>
                         </div>
                         <span class="text-xl font-bold tracking-tight text-white">امداد <span
-                                class="text-primary">نیسان</span></span>
+                                class="text-primary">راه‌بان</span></span>
                     </div>
                     <p class="text-slate-400 leading-relaxed mb-6 max-w-md">
-                        مجموعه امداد خودرو نیسان با کادری مجرب و سابقه بیش از ۱۰ سال در زمینه امداد جاده‌ای، آماده
+                        امداد راه‌بان با کادری مجرب و سابقه بیش از ۱۰ سال در زمینه امداد جاده‌ای، آماده
                         خدمت‌رسانی به شما همشهریان عزیز در تمام ساعات شبانه‌روز می‌باشد. ایمنی خودروی شما اولویت ماست.
                     </p>
                     <div class="flex gap-4">
@@ -32,20 +37,19 @@ export function renderFooter(): string {
                         <li><a class="hover:text-primary transition-colors" href="#">صفحه اصلی</a></li>
                         <li><a class="hover:text-primary transition-colors" href="#pricing-services">خدمات و قیمت‌ها</a>
                         </li>
-                        <li><a class="hover:text-primary transition-colors" href="#gallery">گالری ناوگان</a></li>
                         <li><a class="hover:text-primary transition-colors" href="#coverage">محدوده پوشش</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h4 class="text-white font-bold mb-6">اطلاعات دفتر مرکزی</h4>
+                    <h4 class="text-white font-bold mb-6">اطلاعات تماس</h4>
                     <ul class="space-y-4 text-slate-400">
                         <li class="flex items-start gap-3">
                             <span class="material-icons text-primary text-sm mt-1">location_on</span>
-                            <span>تهران، بزرگراه اشرفی اصفهانی، نرسیده به پونک، مجتمع اداری امداد نیسان</span>
+                            <span>آذربایجان غربی٫ شهرستان شاهین دژ</span>
                         </li>
                         <li class="flex items-center gap-3">
                             <span class="material-icons text-primary text-sm">phone</span>
-                            <span dir="ltr">۰۹۱۲ ۰۰۰ ۰۰۰۰</span>
+                            <span dir="ltr">${data.phone}</span>
                         </li>
                         <li class="flex items-center gap-3">
                             <span class="material-icons text-primary text-sm">access_time</span>
@@ -55,7 +59,7 @@ export function renderFooter(): string {
                 </div>
             </div>
             <div class="border-t border-white/5 pt-10 flex flex-col md:flex-row justify-between items-center gap-4">
-                <p class="text-slate-500 text-sm">© ۱۴۰۳ تمامی حقوق مادی و معنوی برای مجموعه امداد خودرو نیسان محفوظ
+                <p class="text-slate-500 text-sm">© ۱۴۰۳ تمامی حقوق مادی و معنوی برای مجموعه امداد راه‌بان محفوظ
                     است.</p>
                 <div class="flex gap-6">
                     <img alt="Trust Badge 1"

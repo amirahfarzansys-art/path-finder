@@ -1,3 +1,8 @@
+import rawData from '../../data/site-data.json'
+import type { Hero } from '../../types/site'
+
+const data = rawData.hero as Hero
+
 export function renderHeader(): string {
     return `
   <nav
@@ -9,15 +14,13 @@ export function renderHeader(): string {
                         <span class="material-icons text-background-dark font-bold text-3xl">local_shipping</span>
                     </div>
                     <span class="text-2xl font-bold tracking-tight text-slate-900 dark:text-white">امداد <span
-                            class="text-primary">نیسان</span></span>
+                            class="text-primary">${data.title}</span></span>
                 </div>
-                <div class="hidden md:flex items-center space-x-reverse space-x-8">
+                <div class="hidden md:flex items-center space-x space-x-8">
                     <a class="text-slate-700 dark:text-slate-200 hover:text-primary transition-colors" href="#">صفحه
                         اصلی</a>
                     <a class="text-slate-700 dark:text-slate-200 hover:text-primary transition-colors"
                         href="#pricing-services">خدمات و قیمت‌ها</a>
-                    <a class="text-slate-700 dark:text-slate-200 hover:text-primary transition-colors"
-                        href="#gallery">گالری ناوگان</a>
                     <a class="text-slate-700 dark:text-slate-200 hover:text-primary transition-colors"
                         href="#coverage">محدوده پوشش</a>
                 </div>
@@ -29,9 +32,9 @@ export function renderHeader(): string {
                         <span class="material-icons moon">dark_mode</span>
                     </button>
                     <a class="hidden sm:flex items-center gap-2 bg-primary hover:bg-accent text-slate-900 font-bold py-2 px-6 rounded-lg transition-all transform hover:scale-105"
-                        href="tel:09120000000">
+                        href="tel:${data.phone}">
                         <span class="material-icons">phone_in_talk</span>
-                        <span>۰۹۱۲۰۰۰۰۰۰۰</span>
+                        <span>${data.phone}</span>
                     </a>
                     <button class="md:hidden text-slate-900 dark:text-white">
                         <span class="material-icons text-3xl">menu</span>

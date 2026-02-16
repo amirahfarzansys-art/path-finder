@@ -1,3 +1,8 @@
+import rawData from '../../data/site-data.json'
+import type { Hero } from '../../types/site'
+
+const data = rawData.hero as Hero
+
 export function renderHero(): string {
     return `
   <header class="relative overflow-hidden min-h-[85vh] flex items-center">
@@ -23,12 +28,12 @@ export function renderHero(): string {
                         شبانه‌روزی</span>
                 </h1>
                 <p class="text-xl text-slate-300 mb-10 leading-relaxed max-w-xl">
-                    حمل خودرو با مدرن‌ترین تجهیزات چرخ‌گیر بدون کوچکترین آسیب به خودروی شما. اعزام فوری تیم مجرب به تمام
+                    حمل خودرو با مدرن‌ترین تجهیزات چرخ‌گیر بدون کوچکترین آسیب به خودروی شما. اعزام فوری به تمام
                     نقاط شهر در کمتر از ۲۰ دقیقه.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4">
                     <a class="flex items-center justify-center gap-3 bg-primary hover:bg-accent text-slate-900 text-xl font-black py-5 px-10 rounded-xl transition-all shadow-xl shadow-primary/20 group"
-                        href="tel:09120000000">
+                        href="tel:${data.phone}">
                         <span class="material-icons group-hover:rotate-12 transition-transform">call</span>
                         تماس فوری با امداد
                     </a>
