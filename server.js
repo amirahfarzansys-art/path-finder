@@ -33,16 +33,14 @@ if (!isProduction) {
 }
 
 // Serve HTML
-app.use('*', async (req, res) => {
+app.use(async (req, res) => {
     try {
         const url = req.originalUrl.replace(base, '')
 
-        /** @type {string} */
         let template
-        /** @type {import('./src/entry-server.js').render} */
         let render
+
         if (!isProduction) {
-            // Always read fresh template in development
             template = await fs.readFile('./index.html', 'utf-8')
             template = await vite.transformIndexHtml(url, template)
             render = (await vite.ssrLoadModule('/src/entry-server.js')).render
