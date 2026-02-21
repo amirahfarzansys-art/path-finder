@@ -19,10 +19,11 @@ export function renderCoverage(): string {
   <section class="py-24 bg-white dark:bg-background-dark transition-colors overflow-hidden" id="coverage">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <span class="text-primary font-bold tracking-widest uppercase text-sm">محدوده پوشش‌دهی</span>
+                <span class="text-primary font-bold tracking-widest uppercase text-sm">پوشش سراسری شاهین دژ</span>
                 <h2 class="text-3xl md:text-4xl font-bold mt-2 mb-4 text-slate-900 dark:text-white">در کمترین زمان در
                     کنار شما هستیم</h2>
                 <div class="h-1.5 w-24 bg-primary mx-auto rounded-full"></div>
+                <p class="text-slate-600 dark:text-slate-400 mt-4 max-w-2xl mx-auto">خدمات امداد خودرو شاهین دژ با اعزام فوری به تمام نقاط شهر و مناطق اطراف</p>
             </div>
             <div class="grid lg:grid-cols-3 gap-12 items-center">
                 <div class="lg:col-span-2 relative">
@@ -53,7 +54,10 @@ export function renderCoverage(): string {
                     <div class="grid grid-cols-1 gap-4">
                         ${items}
                     </div>
-                   
+                    <div class="bg-primary/10 border border-primary/30 rounded-xl p-4">
+                        <p class="text-primary font-bold text-sm">✅ اعزام فوری در کمتر از ۲۰ دقیقه</p>
+                        <p class="text-slate-600 dark:text-slate-400 text-sm mt-2">خدمات ۲۴ ساعته شبانه‌روزی در تمام نقاط شاهین دژ و مناطق اطراف</p>
+                    </div>
                 </div>
             </div>
         </div>

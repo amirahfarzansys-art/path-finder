@@ -1,3 +1,4 @@
+import { renderCalculator } from './components/calculator/calculator'
 import { renderCoverage } from './components/coverage/coverage'
 import { renderFooter } from './components/footer/footer'
 // import { renderGallery } from './components/gallery'
@@ -12,7 +13,8 @@ export function renderAppHtml(): string {
     ${renderHeader()}
     ${renderHero()}
     ${renderServices()}
-  
+    ${renderCalculator()}
+
     ${renderTestimonials()}
     ${renderCoverage()}
     ${renderFooter()}

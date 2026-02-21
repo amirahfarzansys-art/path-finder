@@ -17,8 +17,8 @@ export function renderFooter(): string {
                                 class="text-primary">راه‌بان</span></span>
                     </div>
                     <p class="text-slate-400 leading-relaxed mb-6 max-w-md">
-                        امداد خودرو راه‌بان با کادری مجرب و سابقه بیش از ۱۰ سال در زمینه امداد جاده‌ای، آماده
-                        خدمت‌رسانی به شما همشهریان عزیز در تمام ساعات شبانه‌روز می‌باشد. ایمنی خودروی شما اولویت ماست.
+                        بهترین خدمات امداد خودرو و یدک‌کش شاهین دژ با کادری مجرب و سابقه بیش از ۱۰ سال در زمینه امداد جاده‌ای، 
+                        آماده خدمت‌رسانی به شما همشهریان عزیز در تمام ساعات شبانه‌روز می‌باشد. ایمنی خودروی شما اولویت ماست.
                     </p>
                     <div class="flex gap-4">
                         <a class="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary hover:text-slate-900 transition-all text-slate-400 group"
@@ -45,7 +45,7 @@ export function renderFooter(): string {
                     <ul class="space-y-4 text-slate-400">
                         <li class="flex items-start gap-3">
                             <span class="material-icons text-primary text-sm mt-1">location_on</span>
-                            <span>آذربایجان غربی٫ شهرستان شاهین دژ</span>
+                            <span>شهید بهشتی، شاهین دژ، آذربایجان غربی</span>
                         </li>
                         <li class="flex items-center gap-3">
                             <span class="material-icons text-primary text-sm">phone</span>
@@ -54,6 +54,10 @@ export function renderFooter(): string {
                         <li class="flex items-center gap-3">
                             <span class="material-icons text-primary text-sm">access_time</span>
                             <span>خدمات شبانه‌روزی (۷ روز هفته)</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span class="material-icons text-primary text-sm">local_shipping</span>
+                            <span>امداد خودرو و یدک‌کش شاهین دژ</span>
                         </li>
                     </ul>
                 </div>

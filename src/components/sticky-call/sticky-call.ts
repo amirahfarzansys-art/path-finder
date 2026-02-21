@@ -13,14 +13,14 @@ export function renderStickyCall(): string {
                     <span class="material-icons text-slate-900 text-3xl font-bold">phone_in_talk</span>
                 </div>
                 <div class="hidden sm:block">
-                    <p class="text-primary text-xs font-bold uppercase tracking-wider mb-1">تماس اضطراری ۲۴ ساعته</p>
+                    <p class="text-primary text-xs font-bold uppercase tracking-wider mb-1">امداد خودرو شاهین دژ ۲۴ ساعته</p>
                     <p class="text-white text-xl font-black">${data.phone}</p>
                 </div>
             </div>
             <a class="flex-grow sm:flex-grow-0 bg-primary hover:bg-accent text-slate-900 font-black py-3 px-8 rounded-xl flex items-center justify-center gap-3 transition-transform hover:scale-[1.02] active:scale-95 shadow-lg shadow-primary/20"
                 href="tel:${data.phone}">
                 <span class="material-icons">flash_on</span>
-                <span>اعزام فوری امدادگر</span>
+                <span>اعزام فوری امدادگر شاهین دژ</span>
             </a>
             <div class="hidden md:flex items-center gap-2 text-slate-400 text-sm">
                 <span class="relative flex h-2 w-2">
@@ -28,7 +28,7 @@ export function renderStickyCall(): string {
                         class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-500 opacity-75"></span>
                     <span class="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
                 </span>
-                زمان انتظار: زیر ۲۰ دقیقه
+                زمان اعزام: زیر ۲۰ دقیقه در شاهین دژ
             </div>
         </div>
     </div>

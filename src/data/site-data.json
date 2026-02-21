@@ -1,9 +1,9 @@
 {
     "hero": {
         "title": "راه‌بان",
-        "subtitle": "خدمات امداد و یدک‌کش ۲۴ ساعته",
+        "subtitle": "بهترین خدمات امداد و یدک‌کش شاهین دژ ۲۴ ساعته",
         "ctaText": "تماس فوری",
-        "phone": "09123456789",
+        "phone": "09149850613",
         "whatsApp": "",
         "telagram": "",
         "instagram": "",
@@ -14,25 +14,25 @@
             "icon": "car_crash",
             "title": "یدک‌کش نیسان چرخ‌گیر",
             "description": "حمل تخصصی با سیستم چرخ‌گیر هیدرولیک بدون آسیب به خودرو.",
-            "price": "400,000"
+            "price": 400000
         },
         {
             "icon": "build",
             "title": "مکانیک سیار",
             "description": "عیب‌یابی و تعمیرات در محل.",
-            "price": "250,000"
+            "price": 250000
         },
         {
             "icon": "battery_charging_full",
             "title": "امداد باطری",
             "description": "باطری به باطری سریع و تست دینام.",
-            "price": "180,000"
+            "price": 180000
         },
         {
             "icon": "tire_repair",
             "title": "پنچرگیری",
             "description": "تعویض لاستیک و پنچرگیری تخصصی.",
-            "price": "150,000"
+            "price": 150000
         }
     ],
     "gallery": [
@@ -100,7 +100,13 @@
     ],
     "footer": {
         "phone": "09123456789",
-        "address": "تهران",
-        "instagram": "emdad"
+        "address": "شهید بهشتی، شاهین دژ، آذربایجان غربی",
+        "instagram": "emdad_shahin_dezh"
+    },
+    "calculator": {
+        "ratePerKm": 15000,
+        "baseFee": 50000,
+        "minDistance": 1,
+        "maxDistance": 100
     }
 }

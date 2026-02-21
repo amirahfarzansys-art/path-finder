@@ -23,13 +23,13 @@ export function renderHero(): string {
                     <span class="text-sm font-semibold">پاسخگویی شبانه‌روزی (۲۴/۷)</span>
                 </div>
                 <h1 class="text-4xl md:text-6xl font-black leading-tight mb-6 text-white">
-                    امداد خودرو و یدک‌کش <br />
-                    <span class="text-primary underline decoration-primary/30 underline-offset-8">نیسان
+                    بهترین امداد خودرو و یدک‌کش <br />
+                    <span class="text-primary underline decoration-primary/30 underline-offset-8">شاهین دژ
                         شبانه‌روزی</span>
                 </h1>
                 <p class="text-xl text-slate-300 mb-10 leading-relaxed max-w-xl">
                     حمل خودرو با مدرن‌ترین تجهیزات چرخ‌گیر بدون کوچکترین آسیب به خودروی شما. اعزام فوری به تمام
-                    نقاط شهر در کمتر از ۲۰ دقیقه.
+                    نقاط شاهین دژ و حومه در کمتر از ۲۰ دقیقه.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4">
                     <a class="flex items-center justify-center gap-3 bg-primary hover:bg-accent text-slate-900 text-xl font-black py-5 px-10 rounded-xl transition-all shadow-xl shadow-primary/20 group"
