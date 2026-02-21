@@ -17,9 +17,9 @@ export function renderServiceCard(service: Service): string {
       </p>
 
       <div class="border-t border-gray-100 dark:border-white/5 pt-6 mt-auto">
-      <span class="text-sm text-slate-500 dark:text-slate-400 block mb-1">شروع قیمت از:</span>
+        <span class="text-sm text-slate-500 dark:text-slate-400 block mb-1">شروع قیمت از:</span>
         <span class="text-2xl font-black text-primary">
-          ${service.price} 
+          ${service.price.toLocaleString()} 
           <span class="text-sm font-normal text-slate-500 dark:text-slate-400">تومان</span>
         </span>
       </div>

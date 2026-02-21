@@ -19,8 +19,36 @@ export interface Testimonial {
 }
 
 export interface GalleryItem {
+    id: number // شناسه منحصر به فرد تصویر
     image: string // مسیر یا URL تصویر
-    alt: string // متن جایگزین برای تصویر
+    title: string // عنوان تصویر
+    description: string // توضیحات تصویر
+    accidentType: string // نوع تصادف
+    location: string // محل وقوع حادثه
+    time: string // زمان وقوع
+    date: string // تاریخ وقوع
+    roadConditions: string // شرایط جاده
+    vehiclesInvolved: string // وسایل نقلیه درگیر
+    severity: string // شدت تصادف
+    equipmentUsed: string // تجهیزات استفاده شده
+    weather: string // شرایط آب و هوایی
+    lighting: string // شرایط روشنایی
+}
+
+export interface FAQ {
+    question: string // متن سوال
+    answer: string // متن پاسخ
+}
+
+export interface Article {
+    id: number // شناسه منحصر به فرد مقاله
+    title: string // عنوان مقاله
+    summary: string // خلاصه مقاله
+    content: string // محتوای کامل مقاله
+    date: string // تاریخ انتشار
+    author: string // نویسنده مقاله
+    category: string // دسته‌بندی مقاله
+    tags: string[] // برچسب‌های مقاله
 }
 
 export interface Coverage {

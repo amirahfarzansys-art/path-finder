@@ -28,7 +28,7 @@ export function renderCalculator(): string {
                                             <p class="text-sm text-slate-500 dark:text-slate-400">${service.description}</p>
                                         </div>
                                     </div>
-                                    <span class="text-primary font-bold">${service.price} تومان</span>
+                                    <span class="text-primary font-bold whitespace-nowrap">${service.price} تومان</span>
                                 </label>
                             `).join('')}
                         </div>
