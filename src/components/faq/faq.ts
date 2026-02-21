@@ -60,5 +60,5 @@ export function addFAQScripts(): string {
         }
       }
     </script>
-  `
+  `;
 }

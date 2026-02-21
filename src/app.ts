@@ -7,7 +7,7 @@ import { renderServices } from './components/services/services'
 import { renderStickyCall } from './components/sticky-call/sticky-call'
 import { renderTestimonials } from './components/testimonial/testimonials'
 import { renderGallery } from './components/gallery/gallery'
-import { renderFAQ } from './components/faq/faq'
+import { renderFAQ, addFAQScripts } from './components/faq/faq'
 import { renderArticles } from './components/articles/articles'
 import { renderArticleDetail } from './components/article-detail/article-detail'
 
@@ -141,24 +141,8 @@ export function renderAppScripts(): string {
       window.openArticleModal = function(id) {
         alert('مقاله شماره ' + id + ' انتخاب شد\\n(این قسمت نیاز به پیاده‌سازی مودال یا صفحه مقاله دارد)');
       };
-
-      // فیلتر FAQ
-      window.toggleFAQ = function(index) {
-        const answer = document.getElementById('faq-answer-' + index);
-        const button = document.querySelector('button[aria-controls="faq-answer-' + index + '"]');
-        const isOpen = answer.classList.contains('hidden');
-        
-        if (isOpen) {
-          answer.classList.remove('hidden');
-          answer.classList.add('block');
-          button.setAttribute('aria-expanded', 'true');
-        } else {
-          answer.classList.remove('block');
-          answer.classList.add('hidden');
-          button.setAttribute('aria-expanded', 'false');
-        }
-      };
     </script>
+    ${addFAQScripts()}
   `
 }
 
