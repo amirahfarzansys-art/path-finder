@@ -1,11 +1,22 @@
 import './style.css'
-import { renderAppHtml } from './app'
+import { renderAppHtml, renderArticlePage } from './app'
 import { initTheme, toggleTheme } from './utils/theme'
 import { registerSW } from 'virtual:pwa-register'
 import rawData from './data/site-data.json';
 
 const data = rawData as any;
 
+// helper to execute inline scripts injected via innerHTML
+function executeInlineScripts(container: HTMLElement) {
+  container.querySelectorAll('script').forEach(oldScript => {
+    const script = document.createElement('script');
+    if (oldScript.src) {
+      script.src = oldScript.src;
+    }
+    script.textContent = oldScript.textContent;
+    oldScript.replaceWith(script);
+  });
+}
 
 export async function mountApp() {
   initTheme()
@@ -13,9 +24,26 @@ export async function mountApp() {
   const app = document.querySelector('#app')
   if (!app) return
 
-  app.innerHTML = `
-    ${renderAppHtml()}
-  `
+  const base = import.meta.env.BASE_URL || '/'
+  let pathname = window.location.pathname
+  if (base !== '/' && pathname.startsWith(base)) {
+    pathname = pathname.slice(base.length - 1) // keep leading '/'
+  }
+
+  // client side routing for article detail
+  if (pathname.startsWith('/articles/')) {
+    const parts = pathname.split('/')
+    const id = parts[2] || ''
+    app.innerHTML = renderArticlePage(id)
+  } else {
+    app.innerHTML = `
+      ${renderAppHtml()}
+    `
+  }
+
+  // run any inline scripts that were injected
+  executeInlineScripts(app)
+
   registerSW({ immediate: true })
   setupThemeToggle()
   await setupCalculator()

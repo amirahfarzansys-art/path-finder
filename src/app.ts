@@ -9,7 +9,7 @@ import { renderTestimonials } from './components/testimonial/testimonials'
 import { renderGallery } from './components/gallery/gallery'
 import { renderFAQ, addFAQScripts } from './components/faq/faq'
 import { renderArticles } from './components/articles/articles'
-import { renderArticleDetail } from './components/article-detail/article-detail'
+import { renderArticleDetail, addArticleDetailScripts } from './components/article-detail/article-detail'
 
 export function renderAppHtml(): string {
   return `
@@ -25,6 +25,8 @@ export function renderAppHtml(): string {
     ${renderCoverage()}
     ${renderFooter()}
     ${renderStickyCall()}
+
+    ${renderAppScripts()}
   `
 }
 
@@ -35,6 +37,9 @@ export function renderArticlePage(articleId: string): string {
     ${renderArticleDetail(articleId)}
     ${renderFooter()}
     ${renderStickyCall()}
+
+    ${renderAppScripts()}
+    ${addArticleDetailScripts()}
   `
 }
 
@@ -77,15 +82,21 @@ export function renderAppScripts(): string {
       }
       
       // اضافه کردن event listeners
-      document.getElementById('filter-type').addEventListener('change', filterGallery);
-      document.getElementById('filter-conditions').addEventListener('change', filterGallery);
-      document.getElementById('filter-severity').addEventListener('change', filterGallery);
-      document.getElementById('clear-filters').addEventListener('click', () => {
-        document.getElementById('filter-type').value = '';
-        document.getElementById('filter-conditions').value = '';
-        document.getElementById('filter-severity').value = '';
-        filterGallery();
-      });
+      const _type = document.getElementById('filter-type');
+      const _conds = document.getElementById('filter-conditions');
+      const _sev = document.getElementById('filter-severity');
+      const _clr = document.getElementById('clear-filters');
+      if (_type) _type.addEventListener('change', filterGallery);
+      if (_conds) _conds.addEventListener('change', filterGallery);
+      if (_sev) _sev.addEventListener('change', filterGallery);
+      if (_clr) {
+        _clr.addEventListener('click', () => {
+          if (_type) (_type as HTMLInputElement).value = '';
+          if (_conds) (_conds as HTMLInputElement).value = '';
+          if (_sev) (_sev as HTMLInputElement).value = '';
+          filterGallery();
+        });
+      }
       
       // تابع باز کردن مودال (placeholder)
       window.openGalleryModal = function(id) {
@@ -128,18 +139,24 @@ export function renderAppScripts(): string {
         }
       }
       
-      // اضافه کردن event listeners
-      document.getElementById('filter-category').addEventListener('change', filterArticles);
-      document.getElementById('search-input').addEventListener('input', filterArticles);
-      document.getElementById('clear-filters-articles').addEventListener('click', () => {
-        document.getElementById('filter-category').value = '';
-        document.getElementById('search-input').value = '';
-        filterArticles();
-      });
+      // اضافه کردن event listeners در صورت موجود بودن
+      const _cat = document.getElementById('filter-category');
+      const _search = document.getElementById('search-input');
+      const _clear = document.getElementById('clear-filters-articles');
+      if (_cat) _cat.addEventListener('change', filterArticles);
+      if (_search) _search.addEventListener('input', filterArticles);
+      if (_clear) {
+        _clear.addEventListener('click', () => {
+          if (_cat) (_cat as HTMLInputElement).value = '';
+          if (_search) (_search as HTMLInputElement).value = '';
+          filterArticles();
+        });
+      }
       
-      // تابع باز کردن مودال مقاله (placeholder)
+      // تغییر به صفحه جزئیات مقاله (در صورتی که هنوز از تابع استفاده شود)
       window.openArticleModal = function(id) {
-        alert('مقاله شماره ' + id + ' انتخاب شد\\n(این قسمت نیاز به پیاده‌سازی مودال یا صفحه مقاله دارد)');
+        const base = import.meta.env.BASE_URL || '/';
+        window.location.href = base + 'articles/' + id;
       };
     </script>
     ${addFAQScripts()}

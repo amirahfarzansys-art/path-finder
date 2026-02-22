@@ -32,6 +32,14 @@ if (!isProduction) {
     app.use(base, sirv('./dist/client', { extensions: [] }))
 }
 
+// normalize requests to include base path
+app.use((req, res, next) => {
+    if (base !== '/' && !req.originalUrl.startsWith(base)) {
+        return res.redirect(base + (req.originalUrl.startsWith('/') ? req.originalUrl.slice(1) : req.originalUrl));
+    }
+    next();
+});
+
 // Serve HTML
 app.use(async (req, res) => {
     try {

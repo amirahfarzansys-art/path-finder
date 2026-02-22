@@ -10,7 +10,7 @@ export function renderHeader(): string {
             <div class="flex justify-between items-center h-20">
                 <div class="flex items-center gap-2">
                     <div class="rounded-lg">
-                    <img src="logo.png" alt="Logo" class="w-12 h-12">
+                    <img src="${import.meta.env.BASE_URL}logo.png" alt="Logo" class="w-12 h-12">
                     </div>
                     <span class="text-2xl font-bold tracking-tight text-slate-900 dark:text-white">امداد خودرو <span
                             class="text-primary">${data.title}</span></span>

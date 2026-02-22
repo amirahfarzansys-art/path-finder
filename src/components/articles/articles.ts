@@ -77,9 +77,9 @@ function renderArticleCard(article: Article): string {
         
         <div class="flex items-center justify-between">
           <span class="text-sm text-slate-500 dark:text-slate-400">نویسنده: ${article.author}</span>
-          <button class="text-primary hover:text-accent font-semibold text-sm" onclick="openArticleModal(${article.id})">
+          <a href="${import.meta.env.BASE_URL}articles/${article.id}" class="text-primary hover:text-accent font-semibold text-sm">
             مطالعه کامل مقاله →
-          </button>
+          </a>
         </div>
       </div>
     </article>
@@ -127,17 +127,20 @@ export function addArticlesScripts(): string {
       }
       
       // اضافه کردن event listeners
-      document.getElementById('filter-category').addEventListener('change', filterArticles);
-      document.getElementById('search-input').addEventListener('input', filterArticles);
-      document.getElementById('clear-filters-articles').addEventListener('click', () => {
-        document.getElementById('filter-category').value = '';
-        document.getElementById('search-input').value = '';
+      document.getElementById('filter-category')?.addEventListener('change', filterArticles);
+      document.getElementById('search-input')?.addEventListener('input', filterArticles);
+      document.getElementById('clear-filters-articles')?.addEventListener('click', () => {
+        const cat = document.getElementById('filter-category') as HTMLInputElement;
+        const search = document.getElementById('search-input') as HTMLInputElement;
+        if (cat) cat.value = '';
+        if (search) search.value = '';
         filterArticles();
       });
       
       // تابع باز کردن مودال مقاله (placeholder)
       window.openArticleModal = function(id) {
-        alert('مقاله شماره ' + id + ' انتخاب شد\\n(این قسمت نیاز به پیاده‌سازی مودال یا صفحه مقاله دارد)');
+        const base = import.meta.env.BASE_URL || '/';
+        window.location.href = base + 'articles/' + id;
       };
     </script>
   `
