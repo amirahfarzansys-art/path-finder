@@ -7,7 +7,7 @@ import rawData from './data/site-data.json';
 const data = rawData as any;
 
 // helper to execute inline scripts injected via innerHTML
-function executeInlineScripts(container: HTMLElement) {
+function executeInlineScripts(container: Element) {
   container.querySelectorAll('script').forEach(oldScript => {
     const script = document.createElement('script');
     if (oldScript.src) {
