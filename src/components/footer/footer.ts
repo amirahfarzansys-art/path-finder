@@ -22,10 +22,32 @@ export function renderFooter(): string {
                     </p>
                     <div class="flex gap-4">
                         <a class="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary hover:text-slate-900 transition-all text-slate-400 group"
-                            href="${data.instagram}" target="_blank" rel="noopener noreferrer">
-                            <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
-                                <path
-                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z">
+                            href="${data.instagram}" target="_blank" rel="noopener noreferrer" title="اینستاگرام">
+                            <svg class="w-6 h-6 transition-transform duration-300 group-hover:scale-110" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M7.75 2C4.57 2 2 4.57 2 7.75v8.5C2 19.43 4.57 22 7.75 22h8.5C19.43 22 22 19.43 22 16.25v-8.5C22 4.57 19.43 2 16.25 2h-8.5zm0 2h8.5C18.55 4 20 5.45 20 7.75v8.5C20 18.55 18.55 20 16.25 20h-8.5C5.45 20 4 18.55 4 16.25v-8.5C4 5.45 5.45 4 7.75 4zm4.25 2.5A5.75 5.75 0 1 0 17.75 12 5.76 5.76 0 0 0 12 6.5zm0 2A3.75 3.75 0 1 1 8.25 12 3.76 3.76 0 0 1 12 8.5zm4.75-2.25a1.25 1.25 0 1 0 1.25 1.25 1.25 1.25 0 0 0-1.25-1.25z"/>
+                            </svg>
+                        </a>
+                        <a class="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary hover:text-slate-900 transition-all text-slate-400 group"
+                            href="${data.telegram}" target="_blank" rel="noopener noreferrer" title="تلگرام">
+                            <svg class="w-6 h-6 transition-transform duration-300 group-hover:scale-110" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M9.04 15.36l-.38 3.38c.54 0 .77-.23 1.04-.5l2.5-2.38 5.18 3.79c.95.52 1.63.25 1.88-.88l3.41-15.97c.33-1.52-.55-2.11-1.48-1.77L1.78 9.6c-1.46.57-1.44 1.39-.25 1.76l4.77 1.49L17.4 5.5c.52-.34 1-.15.61.19"/>
+                            </svg>
+                        </a>
+                        <a class="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary hover:text-slate-900 transition-all text-slate-400 group"
+                            href="${data.whatsApp}" target="_blank" rel="noopener noreferrer" title="واتساپ">
+                           <svg class="w-6 h-6 transition-transform duration-300 group-hover:scale-110" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2a10 10 0 0 0-8.64 15.06L2 22l5.12-1.34A10 10 0 1 0 12 2zm0 18a8 8 0 0 1-4.09-1.13l-.29-.17-3.04.8.81-2.97-.19-.3A8 8 0 1 1 12 20zm4.47-5.53c-.25-.12-1.48-.73-1.71-.82-.23-.08-.4-.12-.56.12-.17.25-.65.82-.8.99-.15.17-.3.19-.56.06-.25-.12-1.06-.39-2.02-1.25-.75-.67-1.26-1.5-1.41-1.75-.15-.25-.02-.38.11-.5.11-.11.25-.3.37-.45.12-.15.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.65.31-.22.25-.86.84-.86 2.05s.88 2.39 1 2.55c.12.17 1.73 2.64 4.19 3.7.58.25 1.03.4 1.38.51.58.18 1.1.15 1.51.09.46-.07 1.48-.6 1.69-1.18.21-.58.21-1.08.15-1.18-.06-.1-.23-.17-.48-.29z"/>
+                            </svg>
+                        </a>
+                        <a class="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary hover:text-slate-900 transition-all text-slate-400 group"
+                            href="${data.robika}" target="_blank" rel="noopener noreferrer" title="روبیکا">
+                            <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+                                <!-- Outer circle -->
+                                <circle cx="12" cy="12" r="10" fill="currentColor" opacity="0.15"></circle>
+
+                                <!-- Stylized R -->
+                                <path d="M8 7h4.5a3.5 3.5 0 010 7H10v3H8V7zm2 2v3h2.3a1.5 1.5 0 000-3H10zm3 5l3 3h-2.2l-2.3-2.3L13 14z"
+                                      fill="currentColor">
                                 </path>
                             </svg>
                         </a>

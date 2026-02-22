@@ -132,16 +132,8 @@
             "eta": "35 دقیقه"
         },
         {
-            "city": "میاندوآب",
-            "eta": "75 دقیقه"
-        },
-        {
-            "city": "بوکان",
+            "city": "حومه شاهین دژ",
             "eta": "60 دقیقه"
-        },
-        {
-            "city": "تکاب",
-            "eta": "85 دقیقه"
         }
     ],
     "navigation": [
@@ -161,10 +153,10 @@
     "footer": {
         "phone": "09149850613",
         "address": "آذربایجان غربی، شهرستان شاهین دژ",
-        "whatsApp": "",
-        "telegram": "",
+        "whatsApp": "https://wa.me/989149850613",
+        "telegram": "https://t.me/rahban_shahindeg",
         "instagram": "https://www.instagram.com/vahidzare527/",
-        "robika": ""
+        "robika": "https://rubika.ir/rahban_shahindeg"
     },
     "calculator": {
         "ratePerKm": 15000,
