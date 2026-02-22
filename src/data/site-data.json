@@ -6,7 +6,7 @@
         "phone": "09149850613",
         "whatsApp": "",
         "telagram": "",
-        "instagram": "",
+        "instagram": "https://www.instagram.com/vahidzare527/",
         "robika": ""
     },
     "services": [
@@ -38,7 +38,7 @@
     "gallery": [
         {
             "id": 1,
-            "image": "/images/accidents/accident-1.jpg",
+            "image": "./images/accident1.jpeg",
             "title": "تصادف دو خودرویی",
             "description": "برخورد دو خودروی سواری در شرایط برفی",
             "accidentType": "برخورد جلو به عقب",
@@ -54,7 +54,7 @@
         },
         {
             "id": 2,
-            "image": "/images/accidents/accident-2.jpg",
+            "image": "./images/accident2.jpg",
             "title": "وسیله خارج از جاده",
             "description": "خروج خودرو از جاده در شرایط لیس",
             "accidentType": "خروج از جاده",
@@ -70,7 +70,7 @@
         },
         {
             "id": 3,
-            "image": "/images/accidents/accident-3.jpg",
+            "image": "./images/accident3.jpg",
             "title": "برخورد با مانع",
             "description": "برخورد خودرو به درخت در شرایط بارانی",
             "accidentType": "برخورد با مانع",
@@ -86,7 +86,7 @@
         },
         {
             "id": 4,
-            "image": "/images/accidents/accident-4.jpg",
+            "image": "./images/accident1.jpeg",
             "title": "تصادف شبانه",
             "description": "تصادف شبانه در اتوبان شاهین دژ",
             "accidentType": "برخورد جانبی",
@@ -159,9 +159,12 @@
         }
     ],
     "footer": {
-        "phone": "09123456789",
-        "address": "شهید بهشتی، شاهین دژ، آذربایجان غربی",
-        "instagram": "emdad_shahin_dezh"
+        "phone": "09149850613",
+        "address": "آذربایجان غربی، شهرستان شاهین دژ",
+        "whatsApp": "",
+        "telegram": "",
+        "instagram": "https://www.instagram.com/vahidzare527/",
+        "robika": ""
     },
     "calculator": {
         "ratePerKm": 15000,

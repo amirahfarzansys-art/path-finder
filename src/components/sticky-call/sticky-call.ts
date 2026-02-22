@@ -13,7 +13,7 @@ export function renderStickyCall(): string {
                     <span class="material-icons text-slate-900 text-3xl font-bold">phone_in_talk</span>
                 </div>
                 <div class="hidden sm:block">
-                    <p class="text-primary text-xs font-bold uppercase tracking-wider mb-1">امداد خودرو شاهین دژ ۲۴ ساعته</p>
+                    <p class="text-primary text-xs font-bold uppercase tracking-wider mb-1">امداد خودرو راه‌بان شاهین دژ ۲۴ ساعته</p>
                     <p class="text-white text-xl font-black">${data.phone}</p>
                 </div>
             </div>

@@ -35,6 +35,15 @@ export interface GalleryItem {
     lighting: string // شرایط روشنایی
 }
 
+export interface Footer {
+    phone: string // شماره تماس
+    address: string // آدرس محل شرکت یا دفتر
+    whatsApp: string // شماره واتساپ یا لینک گروه واتساپ
+    telegram: string // آدرس تلگرام
+    instagram: string // آدرس اینستاگرام
+    robika: string // آدرس روبیکا
+}
+
 export interface FAQ {
     question: string // متن سوال
     answer: string // متن پاسخ
