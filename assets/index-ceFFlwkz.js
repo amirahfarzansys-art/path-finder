@@ -1,4 +1,4 @@
-(function(){const t=document.createElement("link").relList;if(t&&t.supports&&t.supports("modulepreload"))return;for(const s of document.querySelectorAll('link[rel="modulepreload"]'))u(s);new MutationObserver(s=>{for(const r of s)if(r.type==="childList")for(const x of r.addedNodes)x.tagName==="LINK"&&x.rel==="modulepreload"&&u(x)}).observe(document,{childList:!0,subtree:!0});function m(s){const r={};return s.integrity&&(r.integrity=s.integrity),s.referrerPolicy&&(r.referrerPolicy=s.referrerPolicy),s.crossOrigin==="use-credentials"?r.credentials="include":s.crossOrigin==="anonymous"?r.credentials="omit":r.credentials="same-origin",r}function u(s){if(s.ep)return;s.ep=!0;const r=m(s);fetch(s.href,r)}})();const L={title:"راه‌بان",phone:"09149850613"},_=[{icon:"car_crash",title:"یدک‌کش نیسان چرخ‌گیر",description:"حمل تخصصی با سیستم چرخ‌گیر هیدرولیک بدون آسیب به خودرو.",price:4e5},{icon:"precision_manufacturing",title:"جرثقیل و جابجایی سنگین",description:"جابجایی ماشین‌های سنگین، تجهیزات صنعتی و بارهای خاص با جرثقیل تخصصی.",price:6e5},{icon:"build",title:"مکانیک سیار",description:"عیب‌یابی و تعمیرات در محل.",price:25e4},{icon:"battery_charging_full",title:"امداد باطری",description:"باطری به باطری سریع و تست دینام.",price:18e4}],B=[{id:1,image:"./images/accident1.jpeg",title:"تصادف دو خودرویی",description:"برخورد دو خودروی سواری در شرایط برفی",accidentType:"برخورد جلو به عقب",location:"اتوبان شاهین دژ",time:"14:30",date:"1403/12/15",roadConditions:"برفی و لیس",vehiclesInvolved:"2 خودرو سواری",severity:"متوسط",equipmentUsed:"یدک‌کش چرخ‌گیر",weather:"برفی",lighting:"روشنایی کافی"},{id:2,image:"./images/accident2.jpg",title:"وسیله خارج از جاده",description:"خروج خودرو از جاده در شرایط لیس",accidentType:"خروج از جاده",location:"جاده شاهین دژ به ارومیه",time:"10:15",date:"1403/11/20",roadConditions:"یخی و لیس",vehiclesInvolved:"1 خودرو سواری",severity:"سبک",equipmentUsed:"جرثقیل و یدک‌کش",weather:"یخی",lighting:"نور طبیعی"},{id:3,image:"./images/accident3.jpg",title:"برخورد با مانع",description:"برخورد خودرو به درخت در شرایط بارانی",accidentType:"برخورد با مانع",location:"جاده شاهین دژ به تبریز",time:"18:45",date:"1403/10/05",roadConditions:"بارانی و لغزنده",vehiclesInvolved:"1 خودرو سواری",severity:"شدید",equipmentUsed:"جرثقیل تخصصی",weather:"بارانی",lighting:"چراغ‌های خودرو"},{id:4,image:"./images/accident1.jpeg",title:"تصادف شبانه",description:"تصادف شبانه در اتوبان شاهین دژ",accidentType:"برخورد جانبی",location:"اتوبان شاهین دژ",time:"23:10",date:"1403/09/12",roadConditions:"خشک و مناسب",vehiclesInvolved:"2 خودرو سواری",severity:"متوسط",equipmentUsed:"یدک‌کش چرخ‌گیر",weather:"صاف",lighting:"چراغ‌های اتوبان"}],T=[{name:"سارا قنبری",car:"کیا سراتو",text:"توی اتوبان گیر کرده بودم و خیلی استرس داشتم. امدادگر خیلی با اخلاق بود و با احتیاط کامل ماشین رو تا نمایندگی حمل کردن. ممنون از تیم خوبتون."},{name:"مریم احمدی",car:"سمند سورن",text:"واقعاً از سرعت عملشون غافلگیر شدم. کمتر از ۱۵ دقیقه رسیدن و نیسانشون خیلی تمیز و مجهز بود. چرخ‌گیرشون هیچ صدمه‌ای به سپرم نزد."},{name:"محمد کریمی",car:"تویوتا کرولا",text:"قیمتشون دقیقاً همونی بود که پشت تلفن گفتن. تجهیزاتشون بسیار مدرن بود و راننده نیسان خیلی مسلط بود. امنیت خودرو کاملاً حفظ شد."}],q=[{city:"شاهین دژ",eta:"15 دقیقه"},{city:"محمودآباد (محمودجیق)",eta:"25 دقیقه"},{city:"کشاورز",eta:"35 دقیقه"},{city:"میاندوآب",eta:"75 دقیقه"},{city:"بوکان",eta:"60 دقیقه"},{city:"تکاب",eta:"85 دقیقه"}],I={phone:"09149850613",address:"آذربایجان غربی، شهرستان شاهین دژ",instagram:"https://www.instagram.com/vahidzare527/"},A={ratePerKm:15e3,baseFee:5e4,minDistance:1,maxDistance:100},C=[{question:"هزینه امداد خودرو در شاهین دژ چقدر است؟",answer:"هزینه امداد خودرو در شاهین دژ بسته به نوع خدمت و فاصله متفاوت است. برای یدک‌کش چرخ‌گیر از 400,000 تومان شروع می‌شود و برای جرثقیل از 600,000 تومان. همچنین هزینه حمل بر اساس فاصله محاسبه می‌شود (15,000 تومان به ازای هر کیلومتر به علاوه 50,000 تومان هزینه پایه)."},{question:"زمان رسیدن امدادگر به محل حادثه چقدر است؟",answer:"در شاهین دژ معمولاً کمتر از 15 دقیقه، در محمودآباد 25 دقیقه، در کشاورز 35 دقیقه و در مناطق دورتر تا 85 دقیقه زمان لازم است. این زمان بسته به شرایط جاده و ترافیک ممکن است متفاوت باشد."},{question:"آیا خدمات شما 24 ساعته است؟",answer:"بله، خدمات امداد خودرو راه‌بان در شاهین دژ به صورت 24 ساعته و هفت روز هفته فعال است. همیشه در خدمت شما هستیم."},{question:"چه نوع خودروهایی را می‌توانید امداد کنید؟",answer:"ما می‌توانیم تمام انواع خودروهای سواری، وانت، نیسان، ون و حتی ماشین‌های سنگین و تجهیزات صنعتی را با استفاده از یدک‌کش چرخ‌گیر و جرثقیل تخصصی امداد کنیم."},{question:"آیا در شرایط بارانی و برفی هم فعالیت دارید؟",answer:"بله، تیم ما با تجهیزات مدرن و راننده‌های مجرب در تمام شرایط آب و هوایی از جمله باران، برف و یخ فعالیت دارد و آماده ارائه خدمات است."},{question:"هزینه باطری به باطری چقدر است؟",answer:"هزینه باطری به باطری و تست دینام در شاهین دژ 180,000 تومان است. این خدمت به صورت فوری و در محل انجام می‌شود."},{question:"آیا خدمات پنچرگیری نیز ارائه می‌دهید؟",answer:"بله، خدمات پنچرگیری تخصصی با تعویض لاستیک و تجهیزات مدرن در شاهین دژ ارائه می‌شود. هزینه این خدمت 150,000 تومان است."},{question:"چگونه می‌توانم با شما تماس بگیرم؟",answer:"می‌توانید با شماره 09149850613 تماس بگیرید یا از طریق فرم تماس در سایت درخواست خود را ثبت کنید. همچنین از طریق واتساپ و شبکه‌های اجتماعی نیز در خدمت شما هستیم."}],K=[{id:1,title:"نحوه رفتار در حوادث رانندگی و اهمیت امداد فوری",summary:"در این مقاله به بررسی اهمیت رفتار صحیح در حوادث رانندگی و نیاز به امداد فوری می‌پردازیم.",content:`حوادث رانندگی می‌تواند در هر لحظه و در هر جایی رخ دهد. مهمترین نکته در این شرایط، حفظ خونسردی و انجام اقدامات اولیه صحیح است. در این مقاله به بررسی مراحل لازم برای رفتار در حوادث رانندگی و اهمیت تماس فوری با امدادگران تخصصی می‌پردازیم.
+(function(){const t=document.createElement("link").relList;if(t&&t.supports&&t.supports("modulepreload"))return;for(const s of document.querySelectorAll('link[rel="modulepreload"]'))u(s);new MutationObserver(s=>{for(const r of s)if(r.type==="childList")for(const x of r.addedNodes)x.tagName==="LINK"&&x.rel==="modulepreload"&&u(x)}).observe(document,{childList:!0,subtree:!0});function m(s){const r={};return s.integrity&&(r.integrity=s.integrity),s.referrerPolicy&&(r.referrerPolicy=s.referrerPolicy),s.crossOrigin==="use-credentials"?r.credentials="include":s.crossOrigin==="anonymous"?r.credentials="omit":r.credentials="same-origin",r}function u(s){if(s.ep)return;s.ep=!0;const r=m(s);fetch(s.href,r)}})();const L={title:"راه‌بان",phone:"09149850613"},C=[{icon:"car_crash",title:"یدک‌کش نیسان چرخ‌گیر",description:"حمل تخصصی با سیستم چرخ‌گیر هیدرولیک بدون آسیب به خودرو.",price:4e5},{icon:"precision_manufacturing",title:"جرثقیل و جابجایی سنگین",description:"جابجایی ماشین‌های سنگین، تجهیزات صنعتی و بارهای خاص با جرثقیل تخصصی.",price:6e5},{icon:"build",title:"مکانیک سیار",description:"عیب‌یابی و تعمیرات در محل.",price:25e4},{icon:"battery_charging_full",title:"امداد باطری",description:"باطری به باطری سریع و تست دینام.",price:18e4}],_=[{id:1,image:"./images/accident1.jpeg",title:"تصادف دو خودرویی",description:"برخورد دو خودروی سواری در شرایط برفی",accidentType:"برخورد جلو به عقب",location:"اتوبان شاهین دژ",time:"14:30",date:"1403/12/15",roadConditions:"برفی و لیس",vehiclesInvolved:"2 خودرو سواری",severity:"متوسط",equipmentUsed:"یدک‌کش چرخ‌گیر",weather:"برفی",lighting:"روشنایی کافی"},{id:2,image:"./images/accident2.jpg",title:"وسیله خارج از جاده",description:"خروج خودرو از جاده در شرایط لیس",accidentType:"خروج از جاده",location:"جاده شاهین دژ به ارومیه",time:"10:15",date:"1403/11/20",roadConditions:"یخی و لیس",vehiclesInvolved:"1 خودرو سواری",severity:"سبک",equipmentUsed:"جرثقیل و یدک‌کش",weather:"یخی",lighting:"نور طبیعی"},{id:3,image:"./images/accident3.jpg",title:"برخورد با مانع",description:"برخورد خودرو به درخت در شرایط بارانی",accidentType:"برخورد با مانع",location:"جاده شاهین دژ به تبریز",time:"18:45",date:"1403/10/05",roadConditions:"بارانی و لغزنده",vehiclesInvolved:"1 خودرو سواری",severity:"شدید",equipmentUsed:"جرثقیل تخصصی",weather:"بارانی",lighting:"چراغ‌های خودرو"},{id:4,image:"./images/accident1.jpeg",title:"تصادف شبانه",description:"تصادف شبانه در اتوبان شاهین دژ",accidentType:"برخورد جانبی",location:"اتوبان شاهین دژ",time:"23:10",date:"1403/09/12",roadConditions:"خشک و مناسب",vehiclesInvolved:"2 خودرو سواری",severity:"متوسط",equipmentUsed:"یدک‌کش چرخ‌گیر",weather:"صاف",lighting:"چراغ‌های اتوبان"}],B=[{name:"سارا قنبری",car:"کیا سراتو",text:"توی اتوبان گیر کرده بودم و خیلی استرس داشتم. امدادگر خیلی با اخلاق بود و با احتیاط کامل ماشین رو تا نمایندگی حمل کردن. ممنون از تیم خوبتون."},{name:"مریم احمدی",car:"سمند سورن",text:"واقعاً از سرعت عملشون غافلگیر شدم. کمتر از ۱۵ دقیقه رسیدن و نیسانشون خیلی تمیز و مجهز بود. چرخ‌گیرشون هیچ صدمه‌ای به سپرم نزد."},{name:"محمد کریمی",car:"تویوتا کرولا",text:"قیمتشون دقیقاً همونی بود که پشت تلفن گفتن. تجهیزاتشون بسیار مدرن بود و راننده نیسان خیلی مسلط بود. امنیت خودرو کاملاً حفظ شد."}],A=[{city:"شاهین دژ",eta:"15 دقیقه"},{city:"محمودآباد (محمودجیق)",eta:"25 دقیقه"},{city:"کشاورز",eta:"35 دقیقه"},{city:"حومه شاهین دژ",eta:"60 دقیقه"}],T={phone:"09149850613",address:"آذربایجان غربی، شهرستان شاهین دژ",whatsApp:"https://wa.me/989149850613",telegram:"https://t.me/rahban_shahindeg",instagram:"https://www.instagram.com/vahidzare527/",robika:"https://rubika.ir/rahban_shahindeg"},q={ratePerKm:15e3,baseFee:5e4,minDistance:1,maxDistance:100},I=[{question:"هزینه امداد خودرو در شاهین دژ چقدر است؟",answer:"هزینه امداد خودرو در شاهین دژ بسته به نوع خدمت و فاصله متفاوت است. برای یدک‌کش چرخ‌گیر از 400,000 تومان شروع می‌شود و برای جرثقیل از 600,000 تومان. همچنین هزینه حمل بر اساس فاصله محاسبه می‌شود (15,000 تومان به ازای هر کیلومتر به علاوه 50,000 تومان هزینه پایه)."},{question:"زمان رسیدن امدادگر به محل حادثه چقدر است؟",answer:"در شاهین دژ معمولاً کمتر از 15 دقیقه، در محمودآباد 25 دقیقه، در کشاورز 35 دقیقه و در مناطق دورتر تا 85 دقیقه زمان لازم است. این زمان بسته به شرایط جاده و ترافیک ممکن است متفاوت باشد."},{question:"آیا خدمات شما 24 ساعته است؟",answer:"بله، خدمات امداد خودرو راه‌بان در شاهین دژ به صورت 24 ساعته و هفت روز هفته فعال است. همیشه در خدمت شما هستیم."},{question:"چه نوع خودروهایی را می‌توانید امداد کنید؟",answer:"ما می‌توانیم تمام انواع خودروهای سواری، وانت، نیسان، ون و حتی ماشین‌های سنگین و تجهیزات صنعتی را با استفاده از یدک‌کش چرخ‌گیر و جرثقیل تخصصی امداد کنیم."},{question:"آیا در شرایط بارانی و برفی هم فعالیت دارید؟",answer:"بله، تیم ما با تجهیزات مدرن و راننده‌های مجرب در تمام شرایط آب و هوایی از جمله باران، برف و یخ فعالیت دارد و آماده ارائه خدمات است."},{question:"هزینه باطری به باطری چقدر است؟",answer:"هزینه باطری به باطری و تست دینام در شاهین دژ 180,000 تومان است. این خدمت به صورت فوری و در محل انجام می‌شود."},{question:"آیا خدمات پنچرگیری نیز ارائه می‌دهید؟",answer:"بله، خدمات پنچرگیری تخصصی با تعویض لاستیک و تجهیزات مدرن در شاهین دژ ارائه می‌شود. هزینه این خدمت 150,000 تومان است."},{question:"چگونه می‌توانم با شما تماس بگیرم؟",answer:"می‌توانید با شماره 09149850613 تماس بگیرید یا از طریق فرم تماس در سایت درخواست خود را ثبت کنید. همچنین از طریق واتساپ و شبکه‌های اجتماعی نیز در خدمت شما هستیم."}],z=[{id:1,title:"نحوه رفتار در حوادث رانندگی و اهمیت امداد فوری",summary:"در این مقاله به بررسی اهمیت رفتار صحیح در حوادث رانندگی و نیاز به امداد فوری می‌پردازیم.",content:`حوادث رانندگی می‌تواند در هر لحظه و در هر جایی رخ دهد. مهمترین نکته در این شرایط، حفظ خونسردی و انجام اقدامات اولیه صحیح است. در این مقاله به بررسی مراحل لازم برای رفتار در حوادث رانندگی و اهمیت تماس فوری با امدادگران تخصصی می‌پردازیم.
 
 ### مراحل اولیه در صورت وقوع تصادف
 
@@ -147,7 +147,7 @@
 
 ### سخن پایانی
 
-یدک‌کش چرخ‌گیر بهترین انتخاب برای امداد خودرو است که هم ایمنی بالایی دارد و هم از آسیب به خودرو جلوگیری می‌کند. استفاده از این سیستم توسط تیم‌های تخصصی مانند راه‌بان در شاهین دژ، بهترین راه برای امداد خودرو در شرایط مختلف است. برای دریافت خدمات یدک‌کش چرخ‌گیر، با شماره 09149850613 تماس بگیرید.`,date:"1403/12/05",author:"تیم تخصصی راه‌بان",category:"امداد خودرو",tags:["یدک‌کش چرخ‌گیر","امداد خودرو","ایمنی","شاهین دژ"]}],p={hero:L,services:_,gallery:B,testimonials:T,coverage:q,footer:I,calculator:A,faq:C,articles:K},D=p.services;function P(){return`
+یدک‌کش چرخ‌گیر بهترین انتخاب برای امداد خودرو است که هم ایمنی بالایی دارد و هم از آسیب به خودرو جلوگیری می‌کند. استفاده از این سیستم توسط تیم‌های تخصصی مانند راه‌بان در شاهین دژ، بهترین راه برای امداد خودرو در شرایط مختلف است. برای دریافت خدمات یدک‌کش چرخ‌گیر، با شماره 09149850613 تماس بگیرید.`,date:"1403/12/05",author:"تیم تخصصی راه‌بان",category:"امداد خودرو",tags:["یدک‌کش چرخ‌گیر","امداد خودرو","ایمنی","شاهین دژ"]}],p={hero:L,services:C,gallery:_,testimonials:B,coverage:A,footer:T,calculator:q,faq:I,articles:z},K=p.services;function D(){return`
     <section class="py-24 bg-gradient-to-br from-primary/5 to-transparent" id="calculator">
         <div class="max-w-7xl mx-auto px-4">
             <div class="text-center mb-16">
@@ -162,7 +162,7 @@
                     <div>
                         <h3 class="text-lg font-bold mb-4 text-slate-900 dark:text-white">انتخاب خدمات</h3>
                         <div class="space-y-4">
-                            ${D.map(e=>`
+                            ${K.map(e=>`
                                 <label class="flex items-center justify-between p-4 border border-gray-200 dark:border-white/10 rounded-lg cursor-pointer hover:bg-gray-50 dark:hover:bg-white/5 transition-colors service-item" data-price="${e.price}">
                                     <div class="flex items-center gap-3">
                                         <input type="checkbox" class="w-4 h-4 text-primary bg-gray-100 border-gray-300 rounded focus:ring-primary focus:ring-2">
@@ -222,7 +222,7 @@
             </div>
         </div>
     </section>
-  `}const F=p.coverage;function O(){return`
+  `}const P=p.coverage;function O(){return`
   <section class="py-24 bg-white dark:bg-background-dark transition-colors overflow-hidden" id="coverage">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
@@ -259,7 +259,7 @@
                         مناطق تحت پوشش فوری
                     </h3>
                     <div class="grid grid-cols-1 gap-4">
-                        ${F.map(t=>`
+                        ${P.map(t=>`
                     <div class="flex items-center gap-4 bg-slate-50 dark:bg-card-dark p-4 rounded-xl border border-gray-100 dark:border-white/5 hover:border-primary transition-colors">
                         <div class="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center text-primary">
                             <span class="material-icons text-sm">fiber_manual_record</span>
@@ -277,7 +277,7 @@
             </div>
         </div>
     </section>
-  `}const y=p.footer;function z(){return`
+  `}const b=p.footer;function F(){return`
       <footer class="bg-slate-900 dark:bg-black border-t border-white/5 pt-20 pb-28 transition-colors" id="contact">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid md:grid-cols-4 gap-12 mb-16">
@@ -295,10 +295,32 @@
                     </p>
                     <div class="flex gap-4">
                         <a class="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary hover:text-slate-900 transition-all text-slate-400 group"
-                            href="${y.instagram}" target="_blank" rel="noopener noreferrer">
-                            <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
-                                <path
-                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z">
+                            href="${b.instagram}" target="_blank" rel="noopener noreferrer" title="اینستاگرام">
+                            <svg class="w-6 h-6 transition-transform duration-300 group-hover:scale-110" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M7.75 2C4.57 2 2 4.57 2 7.75v8.5C2 19.43 4.57 22 7.75 22h8.5C19.43 22 22 19.43 22 16.25v-8.5C22 4.57 19.43 2 16.25 2h-8.5zm0 2h8.5C18.55 4 20 5.45 20 7.75v8.5C20 18.55 18.55 20 16.25 20h-8.5C5.45 20 4 18.55 4 16.25v-8.5C4 5.45 5.45 4 7.75 4zm4.25 2.5A5.75 5.75 0 1 0 17.75 12 5.76 5.76 0 0 0 12 6.5zm0 2A3.75 3.75 0 1 1 8.25 12 3.76 3.76 0 0 1 12 8.5zm4.75-2.25a1.25 1.25 0 1 0 1.25 1.25 1.25 1.25 0 0 0-1.25-1.25z"/>
+                            </svg>
+                        </a>
+                        <a class="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary hover:text-slate-900 transition-all text-slate-400 group"
+                            href="${b.telegram}" target="_blank" rel="noopener noreferrer" title="تلگرام">
+                            <svg class="w-6 h-6 transition-transform duration-300 group-hover:scale-110" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M9.04 15.36l-.38 3.38c.54 0 .77-.23 1.04-.5l2.5-2.38 5.18 3.79c.95.52 1.63.25 1.88-.88l3.41-15.97c.33-1.52-.55-2.11-1.48-1.77L1.78 9.6c-1.46.57-1.44 1.39-.25 1.76l4.77 1.49L17.4 5.5c.52-.34 1-.15.61.19"/>
+                            </svg>
+                        </a>
+                        <a class="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary hover:text-slate-900 transition-all text-slate-400 group"
+                            href="${b.whatsApp}" target="_blank" rel="noopener noreferrer" title="واتساپ">
+                           <svg class="w-6 h-6 transition-transform duration-300 group-hover:scale-110" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2a10 10 0 0 0-8.64 15.06L2 22l5.12-1.34A10 10 0 1 0 12 2zm0 18a8 8 0 0 1-4.09-1.13l-.29-.17-3.04.8.81-2.97-.19-.3A8 8 0 1 1 12 20zm4.47-5.53c-.25-.12-1.48-.73-1.71-.82-.23-.08-.4-.12-.56.12-.17.25-.65.82-.8.99-.15.17-.3.19-.56.06-.25-.12-1.06-.39-2.02-1.25-.75-.67-1.26-1.5-1.41-1.75-.15-.25-.02-.38.11-.5.11-.11.25-.3.37-.45.12-.15.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.65.31-.22.25-.86.84-.86 2.05s.88 2.39 1 2.55c.12.17 1.73 2.64 4.19 3.7.58.25 1.03.4 1.38.51.58.18 1.1.15 1.51.09.46-.07 1.48-.6 1.69-1.18.21-.58.21-1.08.15-1.18-.06-.1-.23-.17-.48-.29z"/>
+                            </svg>
+                        </a>
+                        <a class="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary hover:text-slate-900 transition-all text-slate-400 group"
+                            href="${b.robika}" target="_blank" rel="noopener noreferrer" title="روبیکا">
+                            <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+                                <!-- Outer circle -->
+                                <circle cx="12" cy="12" r="10" fill="currentColor" opacity="0.15"></circle>
+
+                                <!-- Stylized R -->
+                                <path d="M8 7h4.5a3.5 3.5 0 010 7H10v3H8V7zm2 2v3h2.3a1.5 1.5 0 000-3H10zm3 5l3 3h-2.2l-2.3-2.3L13 14z"
+                                      fill="currentColor">
                                 </path>
                             </svg>
                         </a>
@@ -318,11 +340,11 @@
                     <ul class="space-y-4 text-slate-400">
                         <li class="flex items-start gap-3">
                             <span class="material-icons text-primary text-sm mt-1">location_on</span>
-                            <span>${y.address}</span>
+                            <span>${b.address}</span>
                         </li>
                         <li class="flex items-center gap-3">
                             <span class="material-icons text-primary text-sm">phone</span>
-                            <span dir="ltr">${y.phone}</span>
+                            <span dir="ltr">${b.phone}</span>
                         </li>
                         <li class="flex items-center gap-3">
                             <span class="material-icons text-primary text-sm">access_time</span>
@@ -388,7 +410,7 @@
             </div>
         </div>
     </nav>
-  `}const J=p.hero;function Y(){return`
+  `}const J=p.hero;function M(){return`
   <header class="relative overflow-hidden min-h-[85vh] flex items-center">
         <div class="absolute inset-0 z-0">
             <img alt="Nissan Towing Truck Service" class="w-full h-full object-cover"
@@ -429,7 +451,7 @@
             </div>
         </div>
     </header>
-  `}function R(e){return`
+  `}function H(e){return`
     <div class="bg-white dark:bg-card-dark p-8 rounded-2xl shadow-sm flex flex-col">
       
       <div class="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-6">
@@ -453,7 +475,7 @@
       </div>
 
     </div>
-  `}function V(){return`
+  `}function R(){return`
     <section class="py-24" id="pricing-services">
       <div class="max-w-7xl mx-auto px-4">
         <div class="text-center mb-16">
@@ -463,11 +485,11 @@
           <p class="text-slate-600 dark:text-slate-400 mt-4 max-w-2xl mx-auto">بهترین خدمات امداد خودرو و یدک‌کش در شاهین دژ با اعزام فوری و قیمت شفاف</p>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          ${p.services.map(t=>R(t)).join("")}
+          ${p.services.map(t=>H(t)).join("")}
         </div>
       </div>
     </section>
-  `}const $=p.hero;function M(){return`
+  `}const $=p.hero;function V(){return`
   <div
         class="fixed bottom-0 left-0 right-0 z-50 bg-slate-900/95 dark:bg-black/95 backdrop-blur-lg border-t border-primary/20 shadow-[0_-10px_40px_-15px_rgba(244,192,37,0.3)] transition-colors">
         <div class="max-w-7xl mx-auto px-4 h-20 flex items-center justify-between gap-4">
@@ -505,7 +527,7 @@
             </a>
         </div>
     </div>
-  `}function H(e){return`
+  `}function Y(e){return`
         <div class="bg-white dark:bg-card-dark p-8 rounded-2xl shadow-lg border-r-4 border-primary relative transition-colors">
             <div class="absolute -top-4 -right-4 bg-primary text-background-dark w-10 h-10 rounded-full flex items-center justify-center shadow-lg">
                 <span class="material-icons">format_quote</span>
@@ -530,7 +552,7 @@
                 <div class="h-1.5 w-24 bg-primary mx-auto rounded-full"></div>
                 <p class="text-slate-600 dark:text-slate-400 mt-4 max-w-2xl mx-auto">رضایت مشتریان ما در شاهین دژ گواهی بر کیفیت خدمات امداد خودرو راه‌بان</p>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">${U.map(t=>H(t)).join("")}</div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">${U.map(t=>Y(t)).join("")}</div>
         </div>
     </section>
   `}const N=p.gallery;function Z(){return`
@@ -752,17 +774,17 @@
     </article>
   `}function ie(){return`
     ${X()}
-    ${Y()}
-    ${V()}
-    ${P()}
+    ${M()}
+    ${R()}
+    ${D()}
 
     ${Z()}
     ${te()}
     ${re()}
     ${W()}
     ${O()}
-    ${z()}
-    ${M()}
-  `}const E="site-theme";function k(e){const t=document.documentElement;e==="dark"?t.classList.add("dark"):t.classList.remove("dark"),de(),localStorage.setItem(E,e)}function le(){const e=localStorage.getItem(E);if(e)k(e);else{const t=window.matchMedia("(prefers-color-scheme: dark)").matches;k(t?"dark":"light")}}function oe(){const e=document.documentElement.classList.contains("dark");k(e?"light":"dark")}function de(){const e=document.documentElement.classList.contains("dark");document.querySelector(".sun")?.classList.toggle("hidden",e),document.querySelector(".moon")?.classList.toggle("hidden",!e)}const ce="modulepreload",pe=function(e){return"/path-finder/"+e},j={},xe=function(t,m,u){let s=Promise.resolve();if(m&&m.length>0){let i=function(o){return Promise.all(o.map(a=>Promise.resolve(a).then(g=>({status:"fulfilled",value:g}),g=>({status:"rejected",reason:g}))))};var x=i;document.getElementsByTagName("link");const n=document.querySelector("meta[property=csp-nonce]"),l=n?.nonce||n?.getAttribute("nonce");s=i(m.map(o=>{if(o=pe(o),o in j)return;j[o]=!0;const a=o.endsWith(".css"),g=a?'[rel="stylesheet"]':"";if(document.querySelector(`link[href="${o}"]${g}`))return;const d=document.createElement("link");if(d.rel=a?"stylesheet":ce,a||(d.as="script"),d.crossOrigin="",d.href=o,l&&d.setAttribute("nonce",l),document.head.appendChild(d),a)return new Promise((c,b)=>{d.addEventListener("load",c),d.addEventListener("error",()=>b(new Error(`Unable to preload CSS for ${o}`)))})}))}function r(n){const l=new Event("vite:preloadError",{cancelable:!0});if(l.payload=n,window.dispatchEvent(l),!l.defaultPrevented)throw n}return s.then(n=>{for(const l of n||[])l.status==="rejected"&&r(l.reason);return t().catch(r)})};function me(e={}){const{immediate:t=!1,onNeedRefresh:m,onOfflineReady:u,onRegistered:s,onRegisteredSW:r,onRegisterError:x}=e;let n,l;const i=async(a=!0)=>{await l};async function o(){if("serviceWorker"in navigator){if(n=await xe(async()=>{const{Workbox:a}=await import("./workbox-window.prod.es5-BIl4cyR9.js");return{Workbox:a}},[]).then(({Workbox:a})=>new a("/path-finder/sw.js",{scope:"/path-finder/",type:"classic"})).catch(a=>{x?.(a)}),!n)return;n.addEventListener("activated",a=>{(a.isUpdate||a.isExternal)&&window.location.reload()}),n.addEventListener("installed",a=>{a.isUpdate||u?.()}),n.register({immediate:t}).then(a=>{r?r("/path-finder/sw.js",a):s?.(a)}).catch(a=>{x?.(a)})}}return l=o(),i}const S=p;async function ue(){le();const e=document.querySelector("#app");e&&(e.innerHTML=`
+    ${F()}
+    ${V()}
+  `}const E="site-theme";function k(e){const t=document.documentElement;e==="dark"?t.classList.add("dark"):t.classList.remove("dark"),de(),localStorage.setItem(E,e)}function le(){const e=localStorage.getItem(E);if(e)k(e);else{const t=window.matchMedia("(prefers-color-scheme: dark)").matches;k(t?"dark":"light")}}function oe(){const e=document.documentElement.classList.contains("dark");k(e?"light":"dark")}function de(){const e=document.documentElement.classList.contains("dark");document.querySelector(".sun")?.classList.toggle("hidden",e),document.querySelector(".moon")?.classList.toggle("hidden",!e)}const ce="modulepreload",pe=function(e){return"/path-finder/"+e},j={},xe=function(t,m,u){let s=Promise.resolve();if(m&&m.length>0){let i=function(o){return Promise.all(o.map(a=>Promise.resolve(a).then(g=>({status:"fulfilled",value:g}),g=>({status:"rejected",reason:g}))))};var x=i;document.getElementsByTagName("link");const n=document.querySelector("meta[property=csp-nonce]"),l=n?.nonce||n?.getAttribute("nonce");s=i(m.map(o=>{if(o=pe(o),o in j)return;j[o]=!0;const a=o.endsWith(".css"),g=a?'[rel="stylesheet"]':"";if(document.querySelector(`link[href="${o}"]${g}`))return;const d=document.createElement("link");if(d.rel=a?"stylesheet":ce,a||(d.as="script"),d.crossOrigin="",d.href=o,l&&d.setAttribute("nonce",l),document.head.appendChild(d),a)return new Promise((c,f)=>{d.addEventListener("load",c),d.addEventListener("error",()=>f(new Error(`Unable to preload CSS for ${o}`)))})}))}function r(n){const l=new Event("vite:preloadError",{cancelable:!0});if(l.payload=n,window.dispatchEvent(l),!l.defaultPrevented)throw n}return s.then(n=>{for(const l of n||[])l.status==="rejected"&&r(l.reason);return t().catch(r)})};function me(e={}){const{immediate:t=!1,onNeedRefresh:m,onOfflineReady:u,onRegistered:s,onRegisteredSW:r,onRegisterError:x}=e;let n,l;const i=async(a=!0)=>{await l};async function o(){if("serviceWorker"in navigator){if(n=await xe(async()=>{const{Workbox:a}=await import("./workbox-window.prod.es5-BIl4cyR9.js");return{Workbox:a}},[]).then(({Workbox:a})=>new a("/path-finder/sw.js",{scope:"/path-finder/",type:"classic"})).catch(a=>{x?.(a)}),!n)return;n.addEventListener("activated",a=>{(a.isUpdate||a.isExternal)&&window.location.reload()}),n.addEventListener("installed",a=>{a.isUpdate||u?.()}),n.register({immediate:t}).then(a=>{r?r("/path-finder/sw.js",a):s?.(a)}).catch(a=>{x?.(a)})}}return l=o(),i}const S=p;async function ue(){le();const e=document.querySelector("#app");e&&(e.innerHTML=`
     ${ie()}
-  `,me({immediate:!0}),ge(),await ve())}function ge(){const e=document.querySelector("#theme-toggle");e&&e.addEventListener("click",oe)}async function ve(){const e=document.querySelectorAll('.service-item input[type="checkbox"]'),t=document.getElementById("distance-input"),m=document.getElementById("calculate-btn"),u=document.getElementById("reset-btn"),s=document.getElementById("services-total"),r=document.getElementById("distance-cost"),x=document.getElementById("total-cost"),n=document.getElementById("result-message"),l=document.getElementById("final-amount");let i;i=S.calculator||{ratePerKm:15e3,baseFee:5e4,minDistance:1,maxDistance:100};let o=S.services||[];function a(){let c=0;return e.forEach((b,v)=>{if(b.checked){const f=o[v],h=f?f.price:0;c+=h}}),c}function g(c){return c<i.minDistance?i.baseFee:c*i.ratePerKm+i.baseFee}function d(){const c=a(),b=t.value.trim(),v=parseInt(b,10);if(isNaN(v)||v<i.minDistance||v>i.maxDistance){t.value=i.minDistance.toString();return}const f=g(v),h=c+f;s&&(s.innerText=c.toLocaleString()+" تومان"),r&&(r.innerText=f.toLocaleString()+" تومان"),x&&(x.innerText=h.toLocaleString()+" تومان"),h>0?(n&&n.classList.remove("hidden"),l&&(l.innerText=h.toLocaleString()+" تومان")):n&&n.classList.add("hidden")}m.addEventListener("click",d),u.addEventListener("click",()=>{e.forEach(c=>c.checked=!1),t.value=i.minDistance.toString(),n.classList.add("hidden"),d()}),e.forEach(c=>{c.addEventListener("change",d)}),t.addEventListener("input",d),t.min=i.minDistance.toString(),t.max=i.maxDistance.toString(),t.value=i.minDistance.toString(),d()}ue();
+  `,me({immediate:!0}),ge(),await ve())}function ge(){const e=document.querySelector("#theme-toggle");e&&e.addEventListener("click",oe)}async function ve(){const e=document.querySelectorAll('.service-item input[type="checkbox"]'),t=document.getElementById("distance-input"),m=document.getElementById("calculate-btn"),u=document.getElementById("reset-btn"),s=document.getElementById("services-total"),r=document.getElementById("distance-cost"),x=document.getElementById("total-cost"),n=document.getElementById("result-message"),l=document.getElementById("final-amount");let i;i=S.calculator||{ratePerKm:15e3,baseFee:5e4,minDistance:1,maxDistance:100};let o=S.services||[];function a(){let c=0;return e.forEach((f,v)=>{if(f.checked){const h=o[v],y=h?h.price:0;c+=y}}),c}function g(c){return c<i.minDistance?i.baseFee:c*i.ratePerKm+i.baseFee}function d(){const c=a(),f=t.value.trim(),v=parseInt(f,10);if(isNaN(v)||v<i.minDistance||v>i.maxDistance){t.value=i.minDistance.toString();return}const h=g(v),y=c+h;s&&(s.innerText=c.toLocaleString()+" تومان"),r&&(r.innerText=h.toLocaleString()+" تومان"),x&&(x.innerText=y.toLocaleString()+" تومان"),y>0?(n&&n.classList.remove("hidden"),l&&(l.innerText=y.toLocaleString()+" تومان")):n&&n.classList.add("hidden")}m.addEventListener("click",d),u.addEventListener("click",()=>{e.forEach(c=>c.checked=!1),t.value=i.minDistance.toString(),n.classList.add("hidden"),d()}),e.forEach(c=>{c.addEventListener("change",d)}),t.addEventListener("input",d),t.min=i.minDistance.toString(),t.max=i.maxDistance.toString(),t.value=i.minDistance.toString(),d()}ue();
