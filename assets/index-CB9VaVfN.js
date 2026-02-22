@@ -1,4 +1,4 @@
-(function(){const t=document.createElement("link").relList;if(t&&t.supports&&t.supports("modulepreload"))return;for(const s of document.querySelectorAll('link[rel="modulepreload"]'))u(s);new MutationObserver(s=>{for(const r of s)if(r.type==="childList")for(const x of r.addedNodes)x.tagName==="LINK"&&x.rel==="modulepreload"&&u(x)}).observe(document,{childList:!0,subtree:!0});function m(s){const r={};return s.integrity&&(r.integrity=s.integrity),s.referrerPolicy&&(r.referrerPolicy=s.referrerPolicy),s.crossOrigin==="use-credentials"?r.credentials="include":s.crossOrigin==="anonymous"?r.credentials="omit":r.credentials="same-origin",r}function u(s){if(s.ep)return;s.ep=!0;const r=m(s);fetch(s.href,r)}})();const L={title:"راه‌بان",phone:"09149850613"},C=[{icon:"car_crash",title:"یدک‌کش نیسان چرخ‌گیر",description:"حمل تخصصی با سیستم چرخ‌گیر هیدرولیک بدون آسیب به خودرو.",price:4e5},{icon:"precision_manufacturing",title:"جرثقیل و جابجایی سنگین",description:"جابجایی ماشین‌های سنگین، تجهیزات صنعتی و بارهای خاص با جرثقیل تخصصی.",price:6e5},{icon:"build",title:"مکانیک سیار",description:"عیب‌یابی و تعمیرات در محل.",price:25e4},{icon:"battery_charging_full",title:"امداد باطری",description:"باطری به باطری سریع و تست دینام.",price:18e4}],_=[{id:1,image:"./images/accident1.jpeg",title:"تصادف دو خودرویی",description:"برخورد دو خودروی سواری در شرایط برفی",accidentType:"برخورد جلو به عقب",location:"اتوبان شاهین دژ",time:"14:30",date:"1403/12/15",roadConditions:"برفی و لیس",vehiclesInvolved:"2 خودرو سواری",severity:"متوسط",equipmentUsed:"یدک‌کش چرخ‌گیر",weather:"برفی",lighting:"روشنایی کافی"},{id:2,image:"./images/accident2.jpg",title:"وسیله خارج از جاده",description:"خروج خودرو از جاده در شرایط لیس",accidentType:"خروج از جاده",location:"جاده شاهین دژ به ارومیه",time:"10:15",date:"1403/11/20",roadConditions:"یخی و لیس",vehiclesInvolved:"1 خودرو سواری",severity:"سبک",equipmentUsed:"جرثقیل و یدک‌کش",weather:"یخی",lighting:"نور طبیعی"},{id:3,image:"./images/accident3.jpg",title:"برخورد با مانع",description:"برخورد خودرو به درخت در شرایط بارانی",accidentType:"برخورد با مانع",location:"جاده شاهین دژ به تبریز",time:"18:45",date:"1403/10/05",roadConditions:"بارانی و لغزنده",vehiclesInvolved:"1 خودرو سواری",severity:"شدید",equipmentUsed:"جرثقیل تخصصی",weather:"بارانی",lighting:"چراغ‌های خودرو"},{id:4,image:"./images/accident1.jpeg",title:"تصادف شبانه",description:"تصادف شبانه در اتوبان شاهین دژ",accidentType:"برخورد جانبی",location:"اتوبان شاهین دژ",time:"23:10",date:"1403/09/12",roadConditions:"خشک و مناسب",vehiclesInvolved:"2 خودرو سواری",severity:"متوسط",equipmentUsed:"یدک‌کش چرخ‌گیر",weather:"صاف",lighting:"چراغ‌های اتوبان"}],B=[{name:"سارا قنبری",car:"کیا سراتو",text:"توی اتوبان گیر کرده بودم و خیلی استرس داشتم. امدادگر خیلی با اخلاق بود و با احتیاط کامل ماشین رو تا نمایندگی حمل کردن. ممنون از تیم خوبتون."},{name:"مریم احمدی",car:"سمند سورن",text:"واقعاً از سرعت عملشون غافلگیر شدم. کمتر از ۱۵ دقیقه رسیدن و نیسانشون خیلی تمیز و مجهز بود. چرخ‌گیرشون هیچ صدمه‌ای به سپرم نزد."},{name:"محمد کریمی",car:"تویوتا کرولا",text:"قیمتشون دقیقاً همونی بود که پشت تلفن گفتن. تجهیزاتشون بسیار مدرن بود و راننده نیسان خیلی مسلط بود. امنیت خودرو کاملاً حفظ شد."}],A=[{city:"شاهین دژ",eta:"15 دقیقه"},{city:"محمودآباد (محمودجیق)",eta:"25 دقیقه"},{city:"کشاورز",eta:"35 دقیقه"},{city:"حومه شاهین دژ",eta:"60 دقیقه"}],T={phone:"09149850613",address:"آذربایجان غربی، شهرستان شاهین دژ",whatsApp:"https://wa.me/989149850613",telegram:"https://t.me/rahban_shahindeg",instagram:"https://www.instagram.com/vahidzare527/",robika:"https://rubika.ir/rahban_shahindeg"},q={ratePerKm:15e3,baseFee:5e4,minDistance:1,maxDistance:100},I=[{question:"هزینه امداد خودرو در شاهین دژ چقدر است؟",answer:"هزینه امداد خودرو در شاهین دژ بسته به نوع خدمت و فاصله متفاوت است. برای یدک‌کش چرخ‌گیر از 400,000 تومان شروع می‌شود و برای جرثقیل از 600,000 تومان. همچنین هزینه حمل بر اساس فاصله محاسبه می‌شود (15,000 تومان به ازای هر کیلومتر به علاوه 50,000 تومان هزینه پایه)."},{question:"زمان رسیدن امدادگر به محل حادثه چقدر است؟",answer:"در شاهین دژ معمولاً کمتر از 15 دقیقه، در محمودآباد 25 دقیقه، در کشاورز 35 دقیقه و در مناطق دورتر تا 85 دقیقه زمان لازم است. این زمان بسته به شرایط جاده و ترافیک ممکن است متفاوت باشد."},{question:"آیا خدمات شما 24 ساعته است؟",answer:"بله، خدمات امداد خودرو راه‌بان در شاهین دژ به صورت 24 ساعته و هفت روز هفته فعال است. همیشه در خدمت شما هستیم."},{question:"چه نوع خودروهایی را می‌توانید امداد کنید؟",answer:"ما می‌توانیم تمام انواع خودروهای سواری، وانت، نیسان، ون و حتی ماشین‌های سنگین و تجهیزات صنعتی را با استفاده از یدک‌کش چرخ‌گیر و جرثقیل تخصصی امداد کنیم."},{question:"آیا در شرایط بارانی و برفی هم فعالیت دارید؟",answer:"بله، تیم ما با تجهیزات مدرن و راننده‌های مجرب در تمام شرایط آب و هوایی از جمله باران، برف و یخ فعالیت دارد و آماده ارائه خدمات است."},{question:"هزینه باطری به باطری چقدر است؟",answer:"هزینه باطری به باطری و تست دینام در شاهین دژ 180,000 تومان است. این خدمت به صورت فوری و در محل انجام می‌شود."},{question:"آیا خدمات پنچرگیری نیز ارائه می‌دهید؟",answer:"بله، خدمات پنچرگیری تخصصی با تعویض لاستیک و تجهیزات مدرن در شاهین دژ ارائه می‌شود. هزینه این خدمت 150,000 تومان است."},{question:"چگونه می‌توانم با شما تماس بگیرم؟",answer:"می‌توانید با شماره 09149850613 تماس بگیرید یا از طریق فرم تماس در سایت درخواست خود را ثبت کنید. همچنین از طریق واتساپ و شبکه‌های اجتماعی نیز در خدمت شما هستیم."}],z=[{id:1,title:"نحوه رفتار در حوادث رانندگی و اهمیت امداد فوری",summary:"در این مقاله به بررسی اهمیت رفتار صحیح در حوادث رانندگی و نیاز به امداد فوری می‌پردازیم.",content:`حوادث رانندگی می‌تواند در هر لحظه و در هر جایی رخ دهد. مهمترین نکته در این شرایط، حفظ خونسردی و انجام اقدامات اولیه صحیح است. در این مقاله به بررسی مراحل لازم برای رفتار در حوادث رانندگی و اهمیت تماس فوری با امدادگران تخصصی می‌پردازیم.
+(function(){const t=document.createElement("link").relList;if(t&&t.supports&&t.supports("modulepreload"))return;for(const a of document.querySelectorAll('link[rel="modulepreload"]'))d(a);new MutationObserver(a=>{for(const n of a)if(n.type==="childList")for(const l of n.addedNodes)l.tagName==="LINK"&&l.rel==="modulepreload"&&d(l)}).observe(document,{childList:!0,subtree:!0});function r(a){const n={};return a.integrity&&(n.integrity=a.integrity),a.referrerPolicy&&(n.referrerPolicy=a.referrerPolicy),a.crossOrigin==="use-credentials"?n.credentials="include":a.crossOrigin==="anonymous"?n.credentials="omit":n.credentials="same-origin",n}function d(a){if(a.ep)return;a.ep=!0;const n=r(a);fetch(a.href,n)}})();const A={title:"راه‌بان",phone:"09149850613"},I=[{icon:"car_crash",title:"یدک‌کش نیسان چرخ‌گیر",description:"حمل تخصصی با سیستم چرخ‌گیر هیدرولیک بدون آسیب به خودرو.",price:4e5},{icon:"precision_manufacturing",title:"جرثقیل و جابجایی سنگین",description:"جابجایی ماشین‌های سنگین، تجهیزات صنعتی و بارهای خاص با جرثقیل تخصصی.",price:6e5},{icon:"build",title:"مکانیک سیار",description:"عیب‌یابی و تعمیرات در محل.",price:25e4},{icon:"battery_charging_full",title:"امداد باطری",description:"باطری به باطری سریع و تست دینام.",price:18e4}],q=[{id:1,image:"./images/accident1.jpeg",title:"تصادف دو خودرویی",description:"برخورد دو خودروی سواری در شرایط برفی",accidentType:"برخورد جلو به عقب",location:"اتوبان شاهین دژ",time:"14:30",date:"1403/12/15",roadConditions:"برفی و لیس",vehiclesInvolved:"2 خودرو سواری",severity:"متوسط",equipmentUsed:"یدک‌کش چرخ‌گیر",weather:"برفی",lighting:"روشنایی کافی"},{id:2,image:"./images/accident2.jpg",title:"وسیله خارج از جاده",description:"خروج خودرو از جاده در شرایط لیس",accidentType:"خروج از جاده",location:"جاده شاهین دژ به ارومیه",time:"10:15",date:"1403/11/20",roadConditions:"یخی و لیس",vehiclesInvolved:"1 خودرو سواری",severity:"سبک",equipmentUsed:"جرثقیل و یدک‌کش",weather:"یخی",lighting:"نور طبیعی"},{id:3,image:"./images/accident3.jpg",title:"برخورد با مانع",description:"برخورد خودرو به درخت در شرایط بارانی",accidentType:"برخورد با مانع",location:"جاده شاهین دژ به تبریز",time:"18:45",date:"1403/10/05",roadConditions:"بارانی و لغزنده",vehiclesInvolved:"1 خودرو سواری",severity:"شدید",equipmentUsed:"جرثقیل تخصصی",weather:"بارانی",lighting:"چراغ‌های خودرو"},{id:4,image:"./images/accident1.jpeg",title:"تصادف شبانه",description:"تصادف شبانه در اتوبان شاهین دژ",accidentType:"برخورد جانبی",location:"اتوبان شاهین دژ",time:"23:10",date:"1403/09/12",roadConditions:"خشک و مناسب",vehiclesInvolved:"2 خودرو سواری",severity:"متوسط",equipmentUsed:"یدک‌کش چرخ‌گیر",weather:"صاف",lighting:"چراغ‌های اتوبان"}],F=[{name:"سارا قنبری",car:"کیا سراتو",text:"توی اتوبان گیر کرده بودم و خیلی استرس داشتم. امدادگر خیلی با اخلاق بود و با احتیاط کامل ماشین رو تا نمایندگی حمل کردن. ممنون از تیم خوبتون."},{name:"مریم احمدی",car:"سمند سورن",text:"واقعاً از سرعت عملشون غافلگیر شدم. کمتر از ۱۵ دقیقه رسیدن و نیسانشون خیلی تمیز و مجهز بود. چرخ‌گیرشون هیچ صدمه‌ای به سپرم نزد."},{name:"محمد کریمی",car:"تویوتا کرولا",text:"قیمتشون دقیقاً همونی بود که پشت تلفن گفتن. تجهیزاتشون بسیار مدرن بود و راننده نیسان خیلی مسلط بود. امنیت خودرو کاملاً حفظ شد."}],M=[{city:"شاهین دژ",eta:"15 دقیقه"},{city:"محمودآباد (محمودجیق)",eta:"25 دقیقه"},{city:"کشاورز",eta:"35 دقیقه"},{city:"حومه شاهین دژ",eta:"60 دقیقه"}],T={phone:"09149850613",address:"آذربایجان غربی، شهرستان شاهین دژ",whatsApp:"https://wa.me/989149850613",telegram:"https://t.me/rahban_shahindeg",instagram:"https://www.instagram.com/vahidzare527/",robika:"https://rubika.ir/rahban_shahindeg"},z={ratePerKm:15e3,baseFee:5e4,minDistance:1,maxDistance:100},D=[{question:"هزینه امداد خودرو در شاهین دژ چقدر است؟",answer:"هزینه امداد خودرو در شاهین دژ بسته به نوع خدمت و فاصله متفاوت است. برای یدک‌کش چرخ‌گیر از 400,000 تومان شروع می‌شود و برای جرثقیل از 600,000 تومان. همچنین هزینه حمل بر اساس فاصله محاسبه می‌شود (15,000 تومان به ازای هر کیلومتر به علاوه 50,000 تومان هزینه پایه)."},{question:"زمان رسیدن امدادگر به محل حادثه چقدر است؟",answer:"در شاهین دژ معمولاً کمتر از 15 دقیقه، در محمودآباد 25 دقیقه، در کشاورز 35 دقیقه و در مناطق دورتر تا 85 دقیقه زمان لازم است. این زمان بسته به شرایط جاده و ترافیک ممکن است متفاوت باشد."},{question:"آیا خدمات شما 24 ساعته است؟",answer:"بله، خدمات امداد خودرو راه‌بان در شاهین دژ به صورت 24 ساعته و هفت روز هفته فعال است. همیشه در خدمت شما هستیم."},{question:"چه نوع خودروهایی را می‌توانید امداد کنید؟",answer:"ما می‌توانیم تمام انواع خودروهای سواری، وانت، نیسان، ون و حتی ماشین‌های سنگین و تجهیزات صنعتی را با استفاده از یدک‌کش چرخ‌گیر و جرثقیل تخصصی امداد کنیم."},{question:"آیا در شرایط بارانی و برفی هم فعالیت دارید؟",answer:"بله، تیم ما با تجهیزات مدرن و راننده‌های مجرب در تمام شرایط آب و هوایی از جمله باران، برف و یخ فعالیت دارد و آماده ارائه خدمات است."},{question:"هزینه باطری به باطری چقدر است؟",answer:"هزینه باطری به باطری و تست دینام در شاهین دژ 180,000 تومان است. این خدمت به صورت فوری و در محل انجام می‌شود."},{question:"آیا خدمات پنچرگیری نیز ارائه می‌دهید؟",answer:"بله، خدمات پنچرگیری تخصصی با تعویض لاستیک و تجهیزات مدرن در شاهین دژ ارائه می‌شود. هزینه این خدمت 150,000 تومان است."},{question:"چگونه می‌توانم با شما تماس بگیرم؟",answer:"می‌توانید با شماره 09149850613 تماس بگیرید یا از طریق فرم تماس در سایت درخواست خود را ثبت کنید. همچنین از طریق واتساپ و شبکه‌های اجتماعی نیز در خدمت شما هستیم."}],K=[{id:1,title:"نحوه رفتار در حوادث رانندگی و اهمیت امداد فوری",summary:"در این مقاله به بررسی اهمیت رفتار صحیح در حوادث رانندگی و نیاز به امداد فوری می‌پردازیم.",content:`حوادث رانندگی می‌تواند در هر لحظه و در هر جایی رخ دهد. مهمترین نکته در این شرایط، حفظ خونسردی و انجام اقدامات اولیه صحیح است. در این مقاله به بررسی مراحل لازم برای رفتار در حوادث رانندگی و اهمیت تماس فوری با امدادگران تخصصی می‌پردازیم.
 
 ### مراحل اولیه در صورت وقوع تصادف
 
@@ -147,7 +147,7 @@
 
 ### سخن پایانی
 
-یدک‌کش چرخ‌گیر بهترین انتخاب برای امداد خودرو است که هم ایمنی بالایی دارد و هم از آسیب به خودرو جلوگیری می‌کند. استفاده از این سیستم توسط تیم‌های تخصصی مانند راه‌بان در شاهین دژ، بهترین راه برای امداد خودرو در شرایط مختلف است. برای دریافت خدمات یدک‌کش چرخ‌گیر، با شماره 09149850613 تماس بگیرید.`,date:"1403/12/05",author:"تیم تخصصی راه‌بان",category:"امداد خودرو",tags:["یدک‌کش چرخ‌گیر","امداد خودرو","ایمنی","شاهین دژ"]}],p={hero:L,services:C,gallery:_,testimonials:B,coverage:A,footer:T,calculator:q,faq:I,articles:z},K=p.services;function D(){return`
+یدک‌کش چرخ‌گیر بهترین انتخاب برای امداد خودرو است که هم ایمنی بالایی دارد و هم از آسیب به خودرو جلوگیری می‌کند. استفاده از این سیستم توسط تیم‌های تخصصی مانند راه‌بان در شاهین دژ، بهترین راه برای امداد خودرو در شرایط مختلف است. برای دریافت خدمات یدک‌کش چرخ‌گیر، با شماره 09149850613 تماس بگیرید.`,date:"1403/12/05",author:"تیم تخصصی راه‌بان",category:"امداد خودرو",tags:["یدک‌کش چرخ‌گیر","امداد خودرو","ایمنی","شاهین دژ"]}],u={hero:A,services:I,gallery:q,testimonials:F,coverage:M,footer:T,calculator:z,faq:D,articles:K},O=u.services;function P(){return`
     <section class="py-24 bg-gradient-to-br from-primary/5 to-transparent" id="calculator">
         <div class="max-w-7xl mx-auto px-4">
             <div class="text-center mb-16">
@@ -162,7 +162,7 @@
                     <div>
                         <h3 class="text-lg font-bold mb-4 text-slate-900 dark:text-white">انتخاب خدمات</h3>
                         <div class="space-y-4">
-                            ${K.map(e=>`
+                            ${O.map(e=>`
                                 <label class="flex items-center justify-between p-4 border border-gray-200 dark:border-white/10 rounded-lg cursor-pointer hover:bg-gray-50 dark:hover:bg-white/5 transition-colors service-item" data-price="${e.price}">
                                     <div class="flex items-center gap-3">
                                         <input type="checkbox" class="w-4 h-4 text-primary bg-gray-100 border-gray-300 rounded focus:ring-primary focus:ring-2">
@@ -222,7 +222,7 @@
             </div>
         </div>
     </section>
-  `}const P=p.coverage;function O(){return`
+  `}const H=u.coverage;function R(){return`
   <section class="py-24 bg-white dark:bg-background-dark transition-colors overflow-hidden" id="coverage">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
@@ -259,7 +259,7 @@
                         مناطق تحت پوشش فوری
                     </h3>
                     <div class="grid grid-cols-1 gap-4">
-                        ${P.map(t=>`
+                        ${H.map(t=>`
                     <div class="flex items-center gap-4 bg-slate-50 dark:bg-card-dark p-4 rounded-xl border border-gray-100 dark:border-white/5 hover:border-primary transition-colors">
                         <div class="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center text-primary">
                             <span class="material-icons text-sm">fiber_manual_record</span>
@@ -277,7 +277,7 @@
             </div>
         </div>
     </section>
-  `}const b=p.footer;function F(){return`
+  `}const f=u.footer;function L(){return`
       <footer class="bg-slate-900 dark:bg-black border-t border-white/5 pt-20 pb-28 transition-colors" id="contact">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid md:grid-cols-4 gap-12 mb-16">
@@ -295,25 +295,25 @@
                     </p>
                     <div class="flex gap-4">
                         <a class="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary hover:text-slate-900 transition-all text-slate-400 group"
-                            href="${b.instagram}" target="_blank" rel="noopener noreferrer" title="اینستاگرام">
+                            href="${f.instagram}" target="_blank" rel="noopener noreferrer" title="اینستاگرام">
                             <svg class="w-6 h-6 transition-transform duration-300 group-hover:scale-110" viewBox="0 0 24 24" fill="currentColor">
                                 <path d="M7.75 2C4.57 2 2 4.57 2 7.75v8.5C2 19.43 4.57 22 7.75 22h8.5C19.43 22 22 19.43 22 16.25v-8.5C22 4.57 19.43 2 16.25 2h-8.5zm0 2h8.5C18.55 4 20 5.45 20 7.75v8.5C20 18.55 18.55 20 16.25 20h-8.5C5.45 20 4 18.55 4 16.25v-8.5C4 5.45 5.45 4 7.75 4zm4.25 2.5A5.75 5.75 0 1 0 17.75 12 5.76 5.76 0 0 0 12 6.5zm0 2A3.75 3.75 0 1 1 8.25 12 3.76 3.76 0 0 1 12 8.5zm4.75-2.25a1.25 1.25 0 1 0 1.25 1.25 1.25 1.25 0 0 0-1.25-1.25z"/>
                             </svg>
                         </a>
                         <a class="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary hover:text-slate-900 transition-all text-slate-400 group"
-                            href="${b.telegram}" target="_blank" rel="noopener noreferrer" title="تلگرام">
+                            href="${f.telegram}" target="_blank" rel="noopener noreferrer" title="تلگرام">
                             <svg class="w-6 h-6 transition-transform duration-300 group-hover:scale-110" viewBox="0 0 24 24" fill="currentColor">
                                 <path d="M9.04 15.36l-.38 3.38c.54 0 .77-.23 1.04-.5l2.5-2.38 5.18 3.79c.95.52 1.63.25 1.88-.88l3.41-15.97c.33-1.52-.55-2.11-1.48-1.77L1.78 9.6c-1.46.57-1.44 1.39-.25 1.76l4.77 1.49L17.4 5.5c.52-.34 1-.15.61.19"/>
                             </svg>
                         </a>
                         <a class="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary hover:text-slate-900 transition-all text-slate-400 group"
-                            href="${b.whatsApp}" target="_blank" rel="noopener noreferrer" title="واتساپ">
+                            href="${f.whatsApp}" target="_blank" rel="noopener noreferrer" title="واتساپ">
                            <svg class="w-6 h-6 transition-transform duration-300 group-hover:scale-110" viewBox="0 0 24 24" fill="currentColor">
                                 <path d="M12 2a10 10 0 0 0-8.64 15.06L2 22l5.12-1.34A10 10 0 1 0 12 2zm0 18a8 8 0 0 1-4.09-1.13l-.29-.17-3.04.8.81-2.97-.19-.3A8 8 0 1 1 12 20zm4.47-5.53c-.25-.12-1.48-.73-1.71-.82-.23-.08-.4-.12-.56.12-.17.25-.65.82-.8.99-.15.17-.3.19-.56.06-.25-.12-1.06-.39-2.02-1.25-.75-.67-1.26-1.5-1.41-1.75-.15-.25-.02-.38.11-.5.11-.11.25-.3.37-.45.12-.15.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.65.31-.22.25-.86.84-.86 2.05s.88 2.39 1 2.55c.12.17 1.73 2.64 4.19 3.7.58.25 1.03.4 1.38.51.58.18 1.1.15 1.51.09.46-.07 1.48-.6 1.69-1.18.21-.58.21-1.08.15-1.18-.06-.1-.23-.17-.48-.29z"/>
                             </svg>
                         </a>
                         <a class="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary hover:text-slate-900 transition-all text-slate-400 group"
-                            href="${b.robika}" target="_blank" rel="noopener noreferrer" title="روبیکا">
+                            href="${f.robika}" target="_blank" rel="noopener noreferrer" title="روبیکا">
                             <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
                                 <!-- Outer circle -->
                                 <circle cx="12" cy="12" r="10" fill="currentColor" opacity="0.15"></circle>
@@ -340,11 +340,11 @@
                     <ul class="space-y-4 text-slate-400">
                         <li class="flex items-start gap-3">
                             <span class="material-icons text-primary text-sm mt-1">location_on</span>
-                            <span>${b.address}</span>
+                            <span>${f.address}</span>
                         </li>
                         <li class="flex items-center gap-3">
                             <span class="material-icons text-primary text-sm">phone</span>
-                            <span dir="ltr">${b.phone}</span>
+                            <span dir="ltr">${f.phone}</span>
                         </li>
                         <li class="flex items-center gap-3">
                             <span class="material-icons text-primary text-sm">access_time</span>
@@ -371,13 +371,13 @@
             </div>
         </div>
     </footer>
-  `}const w=p.hero;function X(){return`
+  `}const w=u.hero;function j(){return`
   <nav class="sticky top-0 z-50 bg-white/90 dark:bg-background-dark/90 backdrop-blur-md border-b border-primary/10 transition-colors">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">
                 <div class="flex items-center gap-2">
                     <div class="rounded-lg">
-                    <img src="logo.png" alt="Logo" class="w-12 h-12">
+                    <img src="/path-finder/logo.png" alt="Logo" class="w-12 h-12">
                     </div>
                     <span class="text-2xl font-bold tracking-tight text-slate-900 dark:text-white">امداد خودرو <span
                             class="text-primary">${w.title}</span></span>
@@ -410,7 +410,7 @@
             </div>
         </div>
     </nav>
-  `}const J=p.hero;function M(){return`
+  `}const X=u.hero;function J(){return`
   <header class="relative overflow-hidden min-h-[85vh] flex items-center">
         <div class="absolute inset-0 z-0">
             <img alt="Nissan Towing Truck Service" class="w-full h-full object-cover"
@@ -439,7 +439,7 @@
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4">
                     <a class="flex items-center justify-center gap-3 bg-primary hover:bg-accent text-slate-900 text-xl font-black py-5 px-10 rounded-xl transition-all shadow-xl shadow-primary/20 group"
-                        href="tel:${J.phone}">
+                        href="tel:${X.phone}">
                         <span class="material-icons group-hover:rotate-12 transition-transform">call</span>
                         تماس فوری با امداد
                     </a>
@@ -451,7 +451,7 @@
             </div>
         </div>
     </header>
-  `}function H(e){return`
+  `}function V(e){return`
     <div class="bg-white dark:bg-card-dark p-8 rounded-2xl shadow-sm flex flex-col">
       
       <div class="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-6">
@@ -475,7 +475,7 @@
       </div>
 
     </div>
-  `}function R(){return`
+  `}function Y(){return`
     <section class="py-24" id="pricing-services">
       <div class="max-w-7xl mx-auto px-4">
         <div class="text-center mb-16">
@@ -485,11 +485,11 @@
           <p class="text-slate-600 dark:text-slate-400 mt-4 max-w-2xl mx-auto">بهترین خدمات امداد خودرو و یدک‌کش در شاهین دژ با اعزام فوری و قیمت شفاف</p>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          ${p.services.map(t=>H(t)).join("")}
+          ${u.services.map(t=>V(t)).join("")}
         </div>
       </div>
     </section>
-  `}const $=p.hero;function V(){return`
+  `}const $=u.hero;function S(){return`
   <div
         class="fixed bottom-0 left-0 right-0 z-50 bg-slate-900/95 dark:bg-black/95 backdrop-blur-lg border-t border-primary/20 shadow-[0_-10px_40px_-15px_rgba(244,192,37,0.3)] transition-colors">
         <div class="max-w-7xl mx-auto px-4 h-20 flex items-center justify-between gap-4">
@@ -527,7 +527,7 @@
             </a>
         </div>
     </div>
-  `}function Y(e){return`
+  `}function W(e){return`
         <div class="bg-white dark:bg-card-dark p-8 rounded-2xl shadow-lg border-r-4 border-primary relative transition-colors">
             <div class="absolute -top-4 -right-4 bg-primary text-background-dark w-10 h-10 rounded-full flex items-center justify-center shadow-lg">
                 <span class="material-icons">format_quote</span>
@@ -543,7 +543,7 @@
             </div>
             <p class="text-slate-600 dark:text-slate-300 italic leading-relaxed">${e.text}</p>
         </div>
-  `}const U=p.testimonials;function W(){return`
+  `}const U=u.testimonials;function N(){return`
       <section class="py-24 bg-slate-50 dark:bg-background-dark/50 transition-colors" id="testimonials">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
@@ -552,10 +552,10 @@
                 <div class="h-1.5 w-24 bg-primary mx-auto rounded-full"></div>
                 <p class="text-slate-600 dark:text-slate-400 mt-4 max-w-2xl mx-auto">رضایت مشتریان ما در شاهین دژ گواهی بر کیفیت خدمات امداد خودرو راه‌بان</p>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">${U.map(t=>Y(t)).join("")}</div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">${U.map(t=>W(t)).join("")}</div>
         </div>
     </section>
-  `}const N=p.gallery;function Z(){return`
+  `}const G=u.gallery;function Q(){return`
     <section class="py-24" id="gallery">
       <div class="max-w-7xl mx-auto px-4">
         <div class="text-center mb-16">
@@ -602,7 +602,7 @@
 
         <!-- گالری تصاویر -->
         <div id="gallery-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-          ${N.map(e=>Q(e)).join("")}
+          ${G.map(e=>Z(e)).join("")}
         </div>
 
         <!-- پیام هنگامی که نتیجه‌ای یافت نشد -->
@@ -614,7 +614,7 @@
         </div>
       </div>
     </section>
-  `}function Q(e){return`
+  `}function Z(e){return`
     <div class="gallery-card bg-white dark:bg-card-dark rounded-2xl shadow-lg overflow-hidden border border-gray-100 dark:border-white/5 group" 
          data-type="${e.accidentType}" 
          data-conditions="${e.roadConditions}" 
@@ -655,7 +655,7 @@
           </div>
           <div class="flex justify-between text-xs text-slate-500 dark:text-slate-400">
             <span class="font-medium">شدت:</span>
-            <span class="severity-badge ${G(e.severity)}">${e.severity}</span>
+            <span class="severity-badge ${ee(e.severity)}">${e.severity}</span>
           </div>
         </div>
 
@@ -668,7 +668,7 @@
         </div>
       </div>
     </div>
-  `}function G(e){switch(e){case"سبک":return"bg-green-100 text-green-800 dark:bg-green-900/30 dark:text-green-300";case"متوسط":return"bg-yellow-100 text-yellow-800 dark:bg-yellow-900/30 dark:text-yellow-300";case"شدید":return"bg-red-100 text-red-800 dark:bg-red-900/30 dark:text-red-300";default:return"bg-gray-100 text-gray-800 dark:bg-gray-700 dark:text-gray-300"}}const ee=p.faq;function te(){return`
+  `}function ee(e){switch(e){case"سبک":return"bg-green-100 text-green-800 dark:bg-green-900/30 dark:text-green-300";case"متوسط":return"bg-yellow-100 text-yellow-800 dark:bg-yellow-900/30 dark:text-yellow-300";case"شدید":return"bg-red-100 text-red-800 dark:bg-red-900/30 dark:text-red-300";default:return"bg-gray-100 text-gray-800 dark:bg-gray-700 dark:text-gray-300"}}const te=u.faq;function ae(){return`
     <section class="py-24 bg-gray-50 dark:bg-gray-800" id="faq">
       <div class="max-w-7xl mx-auto px-4">
         <div class="text-center mb-16">
@@ -679,11 +679,11 @@
         </div>
 
         <div class="grid gap-6">
-          ${ee.map((e,t)=>ae(e,t)).join("")}
+          ${te.map((e,t)=>se(e,t)).join("")}
         </div>
       </div>
     </section>
-  `}function ae(e,t){return`
+  `}function se(e,t){return`
     <div class="bg-white dark:bg-card-dark rounded-xl shadow-sm border border-gray-100 dark:border-white/5 overflow-hidden">
       <button class="w-full px-6 py-4 text-right flex justify-between items-center focus:outline-none group" onclick="toggleFAQ(${t})" aria-expanded="false" aria-controls="faq-answer-${t}">
         <span class="text-lg font-semibold text-slate-900 dark:text-white">${e.question}</span>
@@ -697,7 +697,25 @@
         ${e.answer}
       </div>
     </div>
-  `}const se=p.articles;function re(){return`
+  `}function re(){return`
+    <script>
+      function toggleFAQ(index) {
+        const answer = document.getElementById('faq-answer-' + index);
+        const button = document.querySelector('button[aria-controls="faq-answer-' + index + '"]');
+        const isOpen = answer.classList.contains('hidden');
+        
+        if (isOpen) {
+          answer.classList.remove('hidden');
+          answer.classList.add('block');
+          button.setAttribute('aria-expanded', 'true');
+        } else {
+          answer.classList.remove('block');
+          answer.classList.add('hidden');
+          button.setAttribute('aria-expanded', 'false');
+        }
+      }
+    <\/script>
+  `}const ne=u.articles;function ie(){return`
     <section class="py-24" id="articles">
       <div class="max-w-7xl mx-auto px-4">
         <div class="text-center mb-16">
@@ -728,7 +746,7 @@
 
         <!-- مقالات -->
         <div id="articles-grid" class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-          ${se.map(e=>ne(e)).join("")}
+          ${ne.map(e=>le(e)).join("")}
         </div>
 
         <!-- پیام هنگامی که نتیجه‌ای یافت نشد -->
@@ -740,7 +758,7 @@
         </div>
       </div>
     </section>
-  `}function ne(e){return`
+  `}function le(e){return`
     <article class="bg-white dark:bg-card-dark rounded-2xl shadow-lg overflow-hidden border border-gray-100 dark:border-white/5 group hover:shadow-xl transition-shadow duration-300">
       <div class="aspect-video overflow-hidden">
         <div class="w-full h-full bg-gradient-to-br from-primary/20 to-transparent flex items-center justify-center">
@@ -766,25 +784,240 @@
         
         <div class="flex items-center justify-between">
           <span class="text-sm text-slate-500 dark:text-slate-400">نویسنده: ${e.author}</span>
-          <button class="text-primary hover:text-accent font-semibold text-sm" onclick="openArticleModal(${e.id})">
+          <a href="/path-finder/articles/${e.id}" class="text-primary hover:text-accent font-semibold text-sm">
             مطالعه کامل مقاله →
-          </button>
+          </a>
         </div>
       </div>
     </article>
-  `}function ie(){return`
-    ${X()}
-    ${M()}
-    ${R()}
-    ${D()}
+  `}const oe=u.articles;function ce(e){return e.split(/\n\s*\n/).map(r=>{let d=!1,a=r.replace(/^### (.*)$/gm,(n,l)=>(d=!0,`<h3>${l}</h3>`)).replace(/^## (.*)$/gm,(n,l)=>(d=!0,`<h2>${l}</h2>`)).replace(/^# (.*)$/gm,(n,l)=>(d=!0,`<h1>${l}</h1>`));return a=a.replace(/\*\*(.*?)\*\*/g,"<strong>$1</strong>").replace(/\n/g,"<br>"),!d&&a.split(/<br>/g).filter(i=>/^\d+\.\s/.test(i)).length?(a=a.replace(/(?:^|<br>)(\d+)\.\s([^<]+)/g,"<li>$2</li>"),a="<ol>"+a+"</ol>",a):d?a:`<p>${a}</p>`}).join("")}function de(e){const t=oe.find(r=>r.id.toString()===e);return t?`
+    <section class="py-24" id="article-detail">
+      <div class="max-w-4xl mx-auto px-4">
+        <!-- دکمه بازگشت -->
+        <div class="mb-8">
+          <a href="/path-finder/articles" class="inline-flex items-center text-primary hover:text-accent font-semibold">
+            <svg class="w-4 h-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
+            </svg>
+            بازگشت به مقالات
+          </a>
+        </div>
 
-    ${Z()}
-    ${te()}
-    ${re()}
-    ${W()}
-    ${O()}
-    ${F()}
-    ${V()}
-  `}const E="site-theme";function k(e){const t=document.documentElement;e==="dark"?t.classList.add("dark"):t.classList.remove("dark"),de(),localStorage.setItem(E,e)}function le(){const e=localStorage.getItem(E);if(e)k(e);else{const t=window.matchMedia("(prefers-color-scheme: dark)").matches;k(t?"dark":"light")}}function oe(){const e=document.documentElement.classList.contains("dark");k(e?"light":"dark")}function de(){const e=document.documentElement.classList.contains("dark");document.querySelector(".sun")?.classList.toggle("hidden",e),document.querySelector(".moon")?.classList.toggle("hidden",!e)}const ce="modulepreload",pe=function(e){return"/path-finder/"+e},j={},xe=function(t,m,u){let s=Promise.resolve();if(m&&m.length>0){let i=function(o){return Promise.all(o.map(a=>Promise.resolve(a).then(g=>({status:"fulfilled",value:g}),g=>({status:"rejected",reason:g}))))};var x=i;document.getElementsByTagName("link");const n=document.querySelector("meta[property=csp-nonce]"),l=n?.nonce||n?.getAttribute("nonce");s=i(m.map(o=>{if(o=pe(o),o in j)return;j[o]=!0;const a=o.endsWith(".css"),g=a?'[rel="stylesheet"]':"";if(document.querySelector(`link[href="${o}"]${g}`))return;const d=document.createElement("link");if(d.rel=a?"stylesheet":ce,a||(d.as="script"),d.crossOrigin="",d.href=o,l&&d.setAttribute("nonce",l),document.head.appendChild(d),a)return new Promise((c,f)=>{d.addEventListener("load",c),d.addEventListener("error",()=>f(new Error(`Unable to preload CSS for ${o}`)))})}))}function r(n){const l=new Event("vite:preloadError",{cancelable:!0});if(l.payload=n,window.dispatchEvent(l),!l.defaultPrevented)throw n}return s.then(n=>{for(const l of n||[])l.status==="rejected"&&r(l.reason);return t().catch(r)})};function me(e={}){const{immediate:t=!1,onNeedRefresh:m,onOfflineReady:u,onRegistered:s,onRegisteredSW:r,onRegisterError:x}=e;let n,l;const i=async(a=!0)=>{await l};async function o(){if("serviceWorker"in navigator){if(n=await xe(async()=>{const{Workbox:a}=await import("./workbox-window.prod.es5-BIl4cyR9.js");return{Workbox:a}},[]).then(({Workbox:a})=>new a("/path-finder/sw.js",{scope:"/path-finder/",type:"classic"})).catch(a=>{x?.(a)}),!n)return;n.addEventListener("activated",a=>{(a.isUpdate||a.isExternal)&&window.location.reload()}),n.addEventListener("installed",a=>{a.isUpdate||u?.()}),n.register({immediate:t}).then(a=>{r?r("/path-finder/sw.js",a):s?.(a)}).catch(a=>{x?.(a)})}}return l=o(),i}const S=p;async function ue(){le();const e=document.querySelector("#app");e&&(e.innerHTML=`
+        <!-- مقاله -->
+        <article class="bg-white dark:bg-card-dark rounded-2xl shadow-lg overflow-hidden border border-gray-100 dark:border-white/5">
+          <!-- هدر مقاله -->
+          <div class="bg-gradient-to-br from-primary/10 to-transparent p-8">
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-xs text-primary font-semibold bg-primary/10 px-3 py-1 rounded-full">${t.category}</span>
+              <span class="text-xs text-slate-500 dark:text-slate-400">${t.date}</span>
+            </div>
+            
+            <h1 class="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mb-4">${t.title}</h1>
+            
+            <div class="flex items-center justify-between">
+              <div class="flex items-center space-x-4 space-x-reverse">
+                <span class="text-sm text-slate-500 dark:text-slate-400">نویسنده: ${t.author}</span>
+                <div class="flex flex-wrap gap-2">
+                  ${t.tags.map(r=>`<span class="text-xs text-slate-500 dark:text-slate-400 bg-gray-100 dark:bg-gray-700 px-2 py-1 rounded">${r}</span>`).join("")}
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- محتوای مقاله -->
+          <div class="p-8">
+            <div class="prose prose-lg max-w-none">
+              ${ce(t.content)}
+            </div>
+          </div>
+
+          <!-- اشتراک گذاری -->
+          <div class="border-t border-gray-100 dark:border-white/5 p-8">
+            <h3 class="text-lg font-semibold text-slate-900 dark:text-white mb-4">اشتراک گذاری مقاله</h3>
+            <div class="flex space-x-4">
+              <a href="#" class="text-slate-500 hover:text-primary transition-colors">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                </svg>
+              </a>
+              <a href="#" class="text-slate-500 hover:text-primary transition-colors">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"/>
+                </svg>
+              </a>
+              <a href="#" class="text-slate-500 hover:text-primary transition-colors">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 16h-2v-6h2v6zm-1-6.891c-.607 0-1.1-.496-1.1-1.109 0-.612.492-1.109 1.1-1.109s1.1.497 1.1 1.109c0 .613-.493 1.109-1.1 1.109zm8 6.891h-1.998v-2.861c0-1.881-2.002-1.722-2.002 0v2.861h-2v-6h2v1.093c.872-1.616 4-1.736 4 1.517v3.351z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+  `:`
+      <section class="py-24" id="article-detail">
+        <div class="max-w-4xl mx-auto px-4">
+          <div class="text-center py-12">
+            <h1 class="text-3xl font-bold text-slate-900 dark:text-white mb-4">مقاله یافت نشد</h1>
+            <p class="text-slate-600 dark:text-slate-400">مقاله مورد نظر شما وجود ندارد یا حذف شده است.</p>
+            <a href="/path-finder/articles" class="mt-6 inline-block bg-primary hover:bg-accent text-white font-bold py-2 px-6 rounded-lg transition-colors">
+              بازگشت به مقالات
+            </a>
+          </div>
+        </div>
+      </section>
+    `}function pe(){return`
+    <script>
+      // تنظیمات اشتراک گذاری
+      document.addEventListener('DOMContentLoaded', function() {
+        const shareButtons = document.querySelectorAll('[href="#"]');
+        shareButtons.forEach(button => {
+          button.addEventListener('click', function(e) {
+            e.preventDefault();
+            alert('این قسمت نیاز به پیاده‌سازی اشتراک گذاری در شبکه‌های اجتماعی دارد');
+          });
+        });
+      });
+    <\/script>
+  `}function me(){return`
+    ${j()}
+    ${J()}
+    ${Y()}
+    ${P()}
+
+    ${Q()}
+    ${ae()}
     ${ie()}
-  `,me({immediate:!0}),ge(),await ve())}function ge(){const e=document.querySelector("#theme-toggle");e&&e.addEventListener("click",oe)}async function ve(){const e=document.querySelectorAll('.service-item input[type="checkbox"]'),t=document.getElementById("distance-input"),m=document.getElementById("calculate-btn"),u=document.getElementById("reset-btn"),s=document.getElementById("services-total"),r=document.getElementById("distance-cost"),x=document.getElementById("total-cost"),n=document.getElementById("result-message"),l=document.getElementById("final-amount");let i;i=S.calculator||{ratePerKm:15e3,baseFee:5e4,minDistance:1,maxDistance:100};let o=S.services||[];function a(){let c=0;return e.forEach((f,v)=>{if(f.checked){const h=o[v],y=h?h.price:0;c+=y}}),c}function g(c){return c<i.minDistance?i.baseFee:c*i.ratePerKm+i.baseFee}function d(){const c=a(),f=t.value.trim(),v=parseInt(f,10);if(isNaN(v)||v<i.minDistance||v>i.maxDistance){t.value=i.minDistance.toString();return}const h=g(v),y=c+h;s&&(s.innerText=c.toLocaleString()+" تومان"),r&&(r.innerText=h.toLocaleString()+" تومان"),x&&(x.innerText=y.toLocaleString()+" تومان"),y>0?(n&&n.classList.remove("hidden"),l&&(l.innerText=y.toLocaleString()+" تومان")):n&&n.classList.add("hidden")}m.addEventListener("click",d),u.addEventListener("click",()=>{e.forEach(c=>c.checked=!1),t.value=i.minDistance.toString(),n.classList.add("hidden"),d()}),e.forEach(c=>{c.addEventListener("change",d)}),t.addEventListener("input",d),t.min=i.minDistance.toString(),t.max=i.maxDistance.toString(),t.value=i.minDistance.toString(),d()}ue();
+    ${N()}
+    ${R()}
+    ${L()}
+    ${S()}
+
+    ${C()}
+  `}function xe(e){return`
+    ${j()}
+    ${de(e)}
+    ${L()}
+    ${S()}
+
+    ${C()}
+    ${pe()}
+  `}function C(){return`
+    <script>
+      // فیلتر گالری
+      function filterGallery() {
+        const typeFilter = document.getElementById('filter-type').value;
+        const conditionsFilter = document.getElementById('filter-conditions').value;
+        const severityFilter = document.getElementById('filter-severity').value;
+        
+        const cards = document.querySelectorAll('.gallery-card');
+        let visibleCount = 0;
+        
+        cards.forEach(card => {
+          const type = card.dataset.type;
+          const conditions = card.dataset.conditions;
+          const severity = card.dataset.severity;
+          
+          const typeMatch = !typeFilter || type === typeFilter;
+          const conditionsMatch = !conditionsFilter || conditions === conditionsFilter;
+          const severityMatch = !severityFilter || severity === severityFilter;
+          
+          if (typeMatch && conditionsMatch && severityMatch) {
+            card.style.display = 'block';
+            visibleCount++;
+          } else {
+            card.style.display = 'none';
+          }
+        });
+        
+        const noResults = document.getElementById('no-results');
+        if (visibleCount === 0) {
+          noResults.classList.remove('hidden');
+        } else {
+          noResults.classList.add('hidden');
+        }
+      }
+      
+      // اضافه کردن event listeners
+      const _type = document.getElementById('filter-type');
+      const _conds = document.getElementById('filter-conditions');
+      const _sev = document.getElementById('filter-severity');
+      const _clr = document.getElementById('clear-filters');
+      if (_type) _type.addEventListener('change', filterGallery);
+      if (_conds) _conds.addEventListener('change', filterGallery);
+      if (_sev) _sev.addEventListener('change', filterGallery);
+      if (_clr) {
+        _clr.addEventListener('click', () => {
+          if (_type) (_type as HTMLInputElement).value = '';
+          if (_conds) (_conds as HTMLInputElement).value = '';
+          if (_sev) (_sev as HTMLInputElement).value = '';
+          filterGallery();
+        });
+      }
+      
+      // تابع باز کردن مودال (placeholder)
+      window.openGalleryModal = function(id) {
+        alert('تصویر شماره ' + id + ' انتخاب شد\\n(این قسمت نیاز به پیاده‌سازی مودال دارد)');
+      };
+
+      // فیلتر مقالات
+      function filterArticles() {
+        const categoryFilter = document.getElementById('filter-category').value;
+        const searchFilter = document.getElementById('search-input').value.toLowerCase();
+        
+        const cards = document.querySelectorAll('.group');
+        let visibleCount = 0;
+        
+        cards.forEach(card => {
+          const category = card.querySelector('.text-primary').textContent;
+          const title = card.querySelector('h3').textContent.toLowerCase();
+          const summary = card.querySelector('p').textContent.toLowerCase();
+          const tags = Array.from(card.querySelectorAll('.bg-gray-100')).map(tag => tag.textContent.toLowerCase());
+          
+          const categoryMatch = !categoryFilter || category === categoryFilter;
+          const searchMatch = !searchFilter || 
+            title.includes(searchFilter) || 
+            summary.includes(searchFilter) || 
+            tags.some(tag => tag.includes(searchFilter));
+          
+          if (categoryMatch && searchMatch) {
+            card.style.display = 'block';
+            visibleCount++;
+          } else {
+            card.style.display = 'none';
+          }
+        });
+        
+        const noResults = document.getElementById('no-articles');
+        if (visibleCount === 0) {
+          noResults.classList.remove('hidden');
+        } else {
+          noResults.classList.add('hidden');
+        }
+      }
+      
+      // اضافه کردن event listeners در صورت موجود بودن
+      const _cat = document.getElementById('filter-category');
+      const _search = document.getElementById('search-input');
+      const _clear = document.getElementById('clear-filters-articles');
+      if (_cat) _cat.addEventListener('change', filterArticles);
+      if (_search) _search.addEventListener('input', filterArticles);
+      if (_clear) {
+        _clear.addEventListener('click', () => {
+          if (_cat) (_cat as HTMLInputElement).value = '';
+          if (_search) (_search as HTMLInputElement).value = '';
+          filterArticles();
+        });
+      }
+      
+      // تغییر به صفحه جزئیات مقاله (در صورتی که هنوز از تابع استفاده شود)
+      window.openArticleModal = function(id) {
+        const base = import.meta.env.BASE_URL || '/';
+        window.location.href = base + 'articles/' + id;
+      };
+    <\/script>
+    ${re()}
+  `}const B="site-theme";function k(e){const t=document.documentElement;e==="dark"?t.classList.add("dark"):t.classList.remove("dark"),ve(),localStorage.setItem(B,e)}function ue(){const e=localStorage.getItem(B);if(e)k(e);else{const t=window.matchMedia("(prefers-color-scheme: dark)").matches;k(t?"dark":"light")}}function ge(){const e=document.documentElement.classList.contains("dark");k(e?"light":"dark")}function ve(){const e=document.documentElement.classList.contains("dark");document.querySelector(".sun")?.classList.toggle("hidden",e),document.querySelector(".moon")?.classList.toggle("hidden",!e)}const fe="modulepreload",he=function(e){return"/path-finder/"+e},E={},be=function(t,r,d){let a=Promise.resolve();if(r&&r.length>0){let o=function(p){return Promise.all(p.map(s=>Promise.resolve(s).then(g=>({status:"fulfilled",value:g}),g=>({status:"rejected",reason:g}))))};var l=o;document.getElementsByTagName("link");const i=document.querySelector("meta[property=csp-nonce]"),c=i?.nonce||i?.getAttribute("nonce");a=o(r.map(p=>{if(p=he(p),p in E)return;E[p]=!0;const s=p.endsWith(".css"),g=s?'[rel="stylesheet"]':"";if(document.querySelector(`link[href="${p}"]${g}`))return;const m=document.createElement("link");if(m.rel=s?"stylesheet":fe,s||(m.as="script"),m.crossOrigin="",m.href=p,c&&m.setAttribute("nonce",c),document.head.appendChild(m),s)return new Promise((x,h)=>{m.addEventListener("load",x),m.addEventListener("error",()=>h(new Error(`Unable to preload CSS for ${p}`)))})}))}function n(i){const c=new Event("vite:preloadError",{cancelable:!0});if(c.payload=i,window.dispatchEvent(c),!c.defaultPrevented)throw i}return a.then(i=>{for(const c of i||[])c.status==="rejected"&&n(c.reason);return t().catch(n)})};function ye(e={}){const{immediate:t=!1,onNeedRefresh:r,onOfflineReady:d,onRegistered:a,onRegisteredSW:n,onRegisterError:l}=e;let i,c;const o=async(s=!0)=>{await c};async function p(){if("serviceWorker"in navigator){if(i=await be(async()=>{const{Workbox:s}=await import("./workbox-window.prod.es5-BIl4cyR9.js");return{Workbox:s}},[]).then(({Workbox:s})=>new s("/path-finder/sw.js",{scope:"/path-finder/",type:"classic"})).catch(s=>{l?.(s)}),!i)return;i.addEventListener("activated",s=>{(s.isUpdate||s.isExternal)&&window.location.reload()}),i.addEventListener("installed",s=>{s.isUpdate||d?.()}),i.register({immediate:t}).then(s=>{n?n("/path-finder/sw.js",s):a?.(s)}).catch(s=>{l?.(s)})}}return c=p(),o}const _=u;function we(e){e.querySelectorAll("script").forEach(t=>{const r=document.createElement("script");t.src&&(r.src=t.src),r.textContent=t.textContent,t.replaceWith(r)})}async function ke(){ue();const e=document.querySelector("#app");if(!e)return;const t="/path-finder/";let r=window.location.pathname;if(r.startsWith(t)&&(r=r.slice(t.length-1)),r.startsWith("/articles/")){const a=r.split("/")[2]||"";e.innerHTML=xe(a)}else e.innerHTML=`
+      ${me()}
+    `;we(e),ye({immediate:!0}),$e(),await Ee()}function $e(){const e=document.querySelector("#theme-toggle");e&&e.addEventListener("click",ge)}async function Ee(){const e=document.querySelectorAll('.service-item input[type="checkbox"]'),t=document.getElementById("distance-input"),r=document.getElementById("calculate-btn"),d=document.getElementById("reset-btn"),a=document.getElementById("services-total"),n=document.getElementById("distance-cost"),l=document.getElementById("total-cost"),i=document.getElementById("result-message"),c=document.getElementById("final-amount");let o;o=_.calculator||{ratePerKm:15e3,baseFee:5e4,minDistance:1,maxDistance:100};let p=_.services||[];function s(){let x=0;return e.forEach((h,v)=>{if(h.checked){const b=p[v],y=b?b.price:0;x+=y}}),x}function g(x){return x<o.minDistance?o.baseFee:x*o.ratePerKm+o.baseFee}function m(){const x=s(),h=t.value.trim(),v=parseInt(h,10);if(isNaN(v)||v<o.minDistance||v>o.maxDistance){t.value=o.minDistance.toString();return}const b=g(v),y=x+b;a&&(a.innerText=x.toLocaleString()+" تومان"),n&&(n.innerText=b.toLocaleString()+" تومان"),l&&(l.innerText=y.toLocaleString()+" تومان"),y>0?(i&&i.classList.remove("hidden"),c&&(c.innerText=y.toLocaleString()+" تومان")):i&&i.classList.add("hidden")}r.addEventListener("click",m),d.addEventListener("click",()=>{e.forEach(x=>x.checked=!1),t.value=o.minDistance.toString(),i.classList.add("hidden"),m()}),e.forEach(x=>{x.addEventListener("change",m)}),t.addEventListener("input",m),t.min=o.minDistance.toString(),t.max=o.maxDistance.toString(),t.value=o.minDistance.toString(),m()}ke();
